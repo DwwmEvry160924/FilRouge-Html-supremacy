@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMbZukZlQjaXsyPggK/4Bls6Nh6Gf0fAQ4neS4" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Partie gauche -->
+            <div class="navbar-gauche">
+                <a href="index.html"><img src="images/logo.png" alt="Logo" style="height: 80px;"></a>                 
+                <ul class="navbar" style="list-style-type: none;">
+                    <li class="nav-fonc"><a href="">Fonctionnalités</a></li>
+                </ul>
+            </div>
+
+            <!-- Partie droite -->
+            <ul class="navbar-droite" style="list-style-type: none;">
+                <li><a href="">S'inscrire</a></li>
+                <li>
+                    <a href="#" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">1</span> <!-- Badge pour le nombre de notifications -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 id="profil">Mon profil</h2>
+
+    <main class="connexion-container">
+        <img src="" alt="">
+        <div class="connexion-form">
+
+            <form action="" method="post">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" required>
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" required>
+                <label for="emailpro">Email pro</label>
+                <input type="text" name="emailpro" id="emailpro" required>
+            </form>
+        </div>
+    </main>
+        
+        <button type="button" class="btn btn-primary btn-lg">Supprimer mon compte</button>
+        <button type="button" class="btn btn-secondary btn-lg">Modifier mes informations personnelles</button>
+        <button type="button" class="btn btn-primary btn-lg">Modifier mon mot de passe</button>
+
+    <footer>
+        
+            <a href="">Faq</a>
+
+        </div>    
+    </footer>
+</body>
+</html>
