@@ -5,7 +5,7 @@
 }
 
 header {
-    position: absolute;
+    height: 80px;
     top: 0;
     width: 100%;
     background-color:rgb(97, 204, 203) ;
@@ -37,9 +37,148 @@ nav {
 
 
 
-footer {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGES FONCTIONNALITES */
+.fonctionnalites-titre{
+    text-align: center;
+    
+}
+.fonctionnalites-texte p{
+    margin: 5px;
+    border: solid 1px black;
+    padding: 15px;
+}
+.fonctionnalites-conclusion{
+    color: green;
+    font-weight: bolder;
+}
+.fonctionnalites-dropdown{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    min-width: 150px;
+    top: 100;
+    background-color: white;
     position: absolute;
-    bottom: 0;
+    box-shadow: black;       
+}
+.nav-fonc:hover .fonctionnalites-dropdown{
+    display: block;       
+}
+.fonctionnalites-dropdown li:hover{
+    text-decoration: none;
+    /* opacity: 70%; */
+    background-color: gray;
+    cursor: pointer;
+}
+
+footer {   
     height: 80px;
     width: 100%;
     background-color: rgb(97, 204, 203) ;
