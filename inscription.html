@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- partie gauche-->
+            <div class="navbar-gauche">
+                <a href="index.html"><img src="/images/logo.png" alt="" style="height: 80px;"></a>
+                <ul  class="navbar" style="list-style-type: none;">
+                    <li class="nav-fonc" ><a href="fonctionnalite.html">Fonctionnalités</a></li>
+                </ul>
+            </div>
+            <!-- partie droite-->
+            <ul  class="navbar-droite" style="list-style-type: none;">
+                <li><a href="connexion.html">Se connecter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="inscription-container">
+        <div class="inscription-form">
+            <h1>Inscription</h1>
+                <form action="" method="post">
+                  <label for="identifiant">Identifiant</label>
+                  <input type="text" name="nom" id="nom" required>
+                  <label for="mdp">Mot de passe</label>
+                  <input type="password" name="mdp" id="mdp" required>
+                  <label for="mdp2">Confirmer le mot de passe</label>
+                  <input type="password" name="mdp2" id="mdp2" required>
+                  <button type="submit">S'inscrire</button>
+              </form>
+          </div>
+    </main>
+    <footer>
+        <h2><a href="">Faq</a></h2>
+    </footer>
+</body>
+</html>

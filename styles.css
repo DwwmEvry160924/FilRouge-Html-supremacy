@@ -5,7 +5,7 @@
 }
 
 header {
-    position: absolute;
+    height: 80px;
     top: 0;
     width: 100%;
     background-color:rgb(97, 204, 203) ;
@@ -15,7 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     a {
         text-decoration: none;
         font-weight: bold;
@@ -38,8 +38,6 @@ nav {
 
 
 footer {
-    position: absolute;
-    bottom: 0;
     height: 80px;
     width: 100%;
     background-color: rgb(97, 204, 203) ;
@@ -48,7 +46,7 @@ footer {
         margin: 25px;
         position: absolute;
         right: 0;
-        
+
     }
 
     a {
@@ -57,4 +55,138 @@ footer {
         color: black;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* page inscription */
+.inscription-form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.inscription-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.inscription-form{
+  border: 2px solid black;
+  padding: 60px;
+  border-radius: 10px;
+  background-color: grey;
+  box-shadow: 0 0 10px black;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 5px;
+    background-color: rgb(97, 204, 203);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
 }
