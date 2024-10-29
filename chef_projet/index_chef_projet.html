@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/chef_projet/chefdeprojet.css">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- partie gauche-->
+            <div class="navbar-gauche">
+                <a href="index.html"><img href="/index.html" src="/images/logo.png" alt="" style="height: 80px;"></a>
+                <ul class="navbar" style="list-style-type: none;">
+                    <li><a href="">Projets</a></li>
+                    <li><a href="">Tâches</a></li>
+                </ul>
+            </div>
+            <!-- partie droite-->
+            <ul class="navbar-droite" style="list-style-type: none;">
+                <li><a href=""><img src="/images/bell.png" alt=""></a></li>
+                <li> <a href=""><img src="/images/person.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card-db-container">
+            <div class="data-card-container">
+                <div class="card-data">
+                    <p>Projets: En cours</p>
+                    <hr>
+                    <h2>13</h2>
+                </div>
+                <div class="card-data">
+                    <p>Projets: En retard</p>
+                    <hr>
+                    <h2>4</h2>
+                </div>
+                <div class="card-data">
+                    <p>Projets: Terminés</p>
+                    <hr>
+                    <h2>6</h2>
+                </div>
+                <div class="card-data">
+                    <p>Projets: Totale</p>
+                    <hr>
+                    <h2>23</h2>
+                </div>
+
+                <div class="card-data">
+                    <p>Tâches: En cours</p>
+                    <hr>
+                    <h2>44</h2>
+                </div>
+                <div class="card-data">
+                    <p>Tâches: En retard</p>
+                    <hr>
+                    <h2>19</h2>
+                </div>
+                <div class="card-data">
+                    <p>Tâches: Terminés</p>
+                    <hr>
+                    <h2>22</h2>
+                </div>
+                <div class="card-data">
+                    <p>Tâches: Totale</p>
+                    <hr>
+                    <h2>85</h2>
+                </div>
+            </div>
+            <div class="graph-card-container">
+                <div class="card-graph">
+                    <h2>STATUS DES PROJETS</h2>
+                    <hr>
+                    <div class="card-graph-body">
+                        <!-- graph-->
+                        <div id="chart"></div>
+                        <!-- graph end-->
+                        <ul>
+                            <li>Projets completées</li>
+                            <li>Projets en cours</li>
+                            <li>Projets en retard</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-graph">
+                    <h2>STATUS DES TÂCHES</h2>
+                    <hr>
+                    <div class="card-graph-body">
+                        <!-- graph-->
+                        <div id="chart"></div>
+                        <!-- graph end-->
+                        <ul>
+                            <li>Tâches completées</li>
+                            <li>Tâches en cours</li>
+                            <li>Tâches en retard</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="separateur">
+        <section class="calendar-container">
+            <div class="hero-calendar">
+                <div class="search-bar">
+                    
+                </div>
+                <div class="head-calendar">
+                    <div class="haut-cal">
+                        <h2>Calendrier</h2>
+                        <button style="height: 40px;"><img src="" alt="">Ajouter</button>
+                    </div>
+                    <hr style="margin: 50px;">
+                    <div class="bas-cal">
+                        <div class="day-btn">
+                            <div class="dropdown-btn">
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="day-navbar">
+                                <ul style="list-style-type: none;">
+                                    <li>jour</li>
+                                    <li>3jours</li>
+                                    <li>Sem</li>
+                                    <li>Mois</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filtre-btn">
+                            <button style="height: 40px;">Filtrer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar">
+                <div class="timeline">
+                    <div class="spacer"></div>
+                    <div class="time-marker">08:00 </div>
+                    <div class="time-marker">09:00 </div>
+                    <div class="time-marker">10:00 </div>
+                    <div class="time-marker">11:00 </div>
+                    <div class="time-marker">12:00 </div>
+                    <div class="time-marker">13:00 </div>
+                    <div class="time-marker">14:00 </div>
+                    <div class="time-marker">15:00 </div>
+                    <div class="time-marker">16:00 </div>
+                    <div class="time-marker">17:00 </div>
+                </div>
+                <div class="days">
+                    <div class="day mon">
+                        <div class="date">
+                            <p class="date-num">9</p>
+                            <p class="date-day">Lun</p>
+                        </div>
+                        <div class="events">
+                            <div class="event start-2 end-5 securities">
+                                <p class="title">Securities Regulation</p>
+                                <p class="time">2 PM - 5 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day tues">
+                        <div class="date">
+                            <p class="date-num">12</p>
+                            <p class="date-day">Tues</p>
+                        </div>
+                        <div class="events">
+                            <div class="event start-10 end-12 corp-fi">
+                                <p class="title">Corporate Finance</p>
+                                <p class="time">10 AM - 12 PM</p>
+                            </div>
+                            <div class="event start-1 end-4 ent-law">
+                                <p class="title">Entertainment Law</p>
+                                <p class="time">1PM - 4PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day wed">
+                        <div class="date">
+                            <p class="date-num">11</p>
+                            <p class="date-day">Wed</p>
+                        </div>
+                        <div class="events">
+                            <div class="event start-12 end-1 writing">
+                                <p class="title">Writing Seminar</p>
+                                <p class="time">11 AM - 12 PM</p>
+                            </div>
+                            <div class="event start-2 end-5 securities">
+                                <p class="title">Securities Regulation</p>
+                                <p class="time">2 PM - 5 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day thurs">
+                        <div class="date">
+                            <p class="date-num">12</p>
+                            <p class="date-day">Thurs</p>
+                        </div>
+                        <div class="events">
+                            <div class="event start-10 end-12 corp-fi">
+                                <p class="title">Corporate Finance</p>
+                                <p class="time">10 AM - 12 PM</p>
+                            </div>
+                            <div class="event start-1 end-4 ent-law">
+                                <p class="title">Entertainment Law</p>
+                                <p class="time">1PM - 4PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day fri">
+                        <div class="date">
+                            <p class="date-num">13</p>
+                            <p class="date-day">Fri</p>
+                        </div>
+                        <div class="events">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <h2><a href="#">Faq</a></h2>
+    </footer>
+
+</html>
