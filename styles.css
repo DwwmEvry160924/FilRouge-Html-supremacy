@@ -41,6 +41,10 @@ footer {
     height: 80px;
     width: 100%;
     background-color: rgb(97, 204, 203) ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
 
     h2 {
         margin: 25px;
@@ -79,7 +83,7 @@ footer {
     box-shadow: 0 0 10px black;
     padding: 50px;
     height: 250px;
-    margin: 50px;   
+    margin: 200px;   
     width: 250px;
 }
 
@@ -141,3 +145,25 @@ button:hover {
 .main{
     background-image: image();
 }
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espace entre les boutons */
+    margin: 20px;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profil-photo {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 2px solid black;
+    margin-top: 100px; 
+}
+
