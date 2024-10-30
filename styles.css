@@ -40,6 +40,146 @@ nav {
     gap: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGES FONCTIONNALITES */
+.fonctionnalites-titre{
+    text-align: center;
+    
+}
+.fonctionnalites-texte p{
+    margin: 5px;
+    border: solid 1px black;
+    padding: 15px;
+}
+.fonctionnalites-conclusion{
+    color: green;
+    font-weight: bolder;
+}
+.fonctionnalites-dropdown{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    min-width: 150px;
+    top: 100;
+    background-color: white;
+    position: absolute;
+    box-shadow: black;       
+}
+.nav-fonc:hover .fonctionnalites-dropdown{
+    display: block;       
+}
+.fonctionnalites-dropdown li:hover{
+    text-decoration: none;
+    /* opacity: 70%; */
+    background-color: gray;
+    cursor: pointer;
+}  
 footer {
     height: 80px;
     width: 100%;
@@ -371,7 +511,7 @@ button:hover {
 
     height: 1000px;
     background-color: #ffffff;
-    background-image: url(/images/work.jpg);
+    background-image: url(images/work.jpg);
     background-size: cover;
 
     h1{
