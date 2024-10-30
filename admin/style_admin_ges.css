@@ -14,32 +14,31 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
-   
+    align-items: center;  
 }
 
 .navbar-gauche{
-    display: flex;
-    
-    align-items: center;
-    gap: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
     a {
         text-decoration: none;
         font-weight: bold;
-        color: black;
-        
+        color: black;        
     }
-}
 
 .navbar-droite{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin-right: 25px;
 }
 
-
+.navbar {
+    display: flex;
+    gap: 20px;
+}  
 
 footer {
     height: 80px;
@@ -58,7 +57,6 @@ footer {
         font-weight: bold;
         color: black;
     }
-
 }
 .connexion-form h1 {
     text-align: center;
@@ -104,7 +102,7 @@ button {
     border-radius: 10px;
     border: 1px solid black;
     margin-top: 5px;
-    background-color: red;
+    background-color: orange;
     font-weight: bold;
     cursor: pointer;
 }
@@ -210,8 +208,10 @@ h2{
     display: flex;
     justify-content: space-between; 
     width: 100%;
-   
-  }
+   }
+.button-group {
+    margin: 20px;
+}
 
 
 
