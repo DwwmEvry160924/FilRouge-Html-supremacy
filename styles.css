@@ -15,7 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     a {
         text-decoration: none;
         font-weight: bold;
@@ -31,11 +31,14 @@ nav {
 
 .navbar-droite{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin-right: 25px;
 }
 
-
+.navbar {
+    display: flex;
+    gap: 20px;
+}
 
 footer {
     height: 80px;
@@ -50,7 +53,7 @@ footer {
         margin: 25px;
         position: absolute;
         right: 0;
-        
+
     }
 
     a {
@@ -167,3 +170,233 @@ button:hover {
     margin-top: 100px; 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* page inscription */
+.inscription-form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.inscription-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.inscription-form{
+  border: 2px solid black;
+  padding: 60px;
+  border-radius: 10px;
+  background-color: grey;
+  box-shadow: 0 0 10px black;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 5px;
+    background-color: rgb(97, 204, 203);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    index
+*/
+
+.hero {
+
+
+    height: 1000px;
+    background-color: #ffffff;
+    background-image: url(/images/work.jpg);
+    background-size: cover;
+
+    h1{
+        color: white;
+        font-size: 60px;
+        text-shadow: 2px 2px 2px black;
+        text-align: center;
+        position: relative;
+        top: 500px;
+
+    }
+
+
+}
+
+
+.tuto-accueil {
+    background-color: #303d48;
+}
+
+.video {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*
+    index end
+*/
