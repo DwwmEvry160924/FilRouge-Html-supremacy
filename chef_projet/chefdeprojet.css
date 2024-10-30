@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Roboto Mono", monospace;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color:rgb(97, 204, 203) ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+}
+
+.navbar-gauche{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-droite{
+    display: flex;
+    gap: 30px;
+    margin-right: 25px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+footer {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(97, 204, 203) ;
+
+    h2 {
+        margin: 25px;
+        position: absolute;
+        right: 0;
+        
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+}
+/*
+    dashboard debut
+*/
+.data-card-container {
+    margin-top: 5rem;
+    margin-bottom:5rem;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(4, 150px);
+}
+
+.card-data {
+    p{
+        font-size: 12px;
+    }
+    border-radius: 4px;
+    background-color: #ffffff;
+    width: 150px;
+    border: #000000 1px solid;
+    text-align: center;
+    padding-bottom:5px;
+}
+
+.graph-card-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-graph {
+    width: 450px;
+    border: #000000 1px solid;
+    border-radius: 8px;
+
+    h2{
+        padding: 8px;
+    }
+
+}
+
+
+.card-graph-body {
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    margin-left: 25px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+#chart {
+    /* CERCLE*/
+
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background-color: #303d48;
+
+    
+    /* Segment*/
+    background: conic-gradient(
+        rgb(255, 0, 0) 0deg 80deg,
+        rgb(0, 68, 255) 80deg 190deg,
+        rgb(0, 255, 42) 190deg 360deg
+    );
+}
+
+
+.separateur {
+    margin: 50px;
+    
+}
+
+/* calendrier debut*/
+
+/*head calendrier*/
+
+.head-calendar {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.haut-cal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.haut-cal button {
+    width: 70px;
+    border-radius: 8px;
+    border: none;
+}
+
+.bas-cal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day-btn {
+    display: flex;
+    gap: 20px;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    background : #a8a8a8; 
+    color : rgb(0, 0, 0);
+    font-size : 12px;
+    font-variant : small-caps;
+    cursor : pointer;
+    display: block;
+}
+  
+span::after {
+float: right;
+right: 20px;
+content: "+";
+}
+
+.slide {
+width: 100px;
+height: 0px;
+overflow: hidden;
+transition: height .4s ease;
+}
+
+.slide li {
+    width: 100px;
+    font-size: 12px;
+    background-color: #ffffff;
+    padding : 5px;
+}
+
+.slide li:hover {
+    opacity: 60%;
+}
+
+#touch {opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {    
+    height: 150px;
+}
+
+
+/*day-navbar*/
+
+.day-navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 230px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+}
+
+
+
+.day-navbar ul {
+    display: flex;
+    gap: 10px;
+
+}
+
+.day-navbar ul li {
+    background-color: #adb5bd ;
+    padding: 3px;
+    border-radius: 4px;
+    
+}
+
+.day-navbar ul li:nth-child(3) {
+    background-color: #ffffff;
+}
+
+.filtre-btn button {
+    width: 70px;
+    border-radius: 8px;
+    border: none;
+
+}
+
+/*day-navbar-end*/
+
+
+/*head calendrier end*/
+
+:root {
+    --numDays: 5;
+    --numHours: 10;
+    --timeHeight: 60px;
+    --calBgColor: #fff1f8;
+    --eventBorderColor: #f2d3d8;
+    --eventColor1: #ffd6d1;
+    --eventColor2: #fafaa3;
+    --eventColor3: #e2f8ff;
+    --eventColor4: #d1ffe6;
+}
+  
+.calendar {
+display: grid;
+gap: 10px;
+grid-template-columns: auto 1fr;
+margin: 2rem;
+}
+
+.timeline {
+display: grid;
+grid-template-rows: repeat(var(--numHours), var(--timeHeight));
+}
+
+.days {
+display: grid;
+grid-column: 2;
+gap: 5px;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.events {
+display: grid;
+grid-template-rows: repeat(var(--numHours), var(--timeHeight));
+border-radius: 5px;
+background: var(--calBgColor);
+}
+
+/*Place sur la Timeline*/
+.start-10 {
+grid-row-start: 2;
+}
+
+.start-12 {
+grid-row-start: 4;
+}
+
+.start-1 {
+grid-row-start: 5;
+}
+
+.start-2 {
+grid-row-start: 6;
+}
+
+.end-12 {
+grid-row-end: 4;
+}
+
+.end-1 {
+grid-row-end: 5;
+}
+
+.end-3 {
+grid-row-end: 7;
+}
+
+.end-4 {
+grid-row-end: 8;
+}
+
+.end-5 {
+grid-row-end: 9;
+}
+
+/*Evenement*/ 
+
+.title {
+font-weight: 600;
+margin-bottom: 0.25rem;
+}
+
+.event {
+border: 1px solid var(--eventBorderColor);
+border-radius: 5px;
+padding: 0.5rem;
+margin: 0 0.5rem;
+background: white;
+}
+
+.space,
+.date {
+height: 60px
+}
+
+/*Global / Etc*/ 
+
+body {
+font-family: system-ui, sans-serif;
+}
+
+.corp-fi {
+background: var(--eventColor1);
+}
+
+.ent-law {
+background: var(--eventColor2);
+}
+
+.writing {
+background: var(--eventColor3);
+}
+
+.securities {
+background: var(--eventColor4);
+}
+
+.date {
+display: flex;
+gap: 1em;
+}
+
+.date-num {
+font-size: 3rem;
+font-weight: 600;
+display: inline;
+}
+
+.date-day {
+display: inline;
+font-size: 3rem;
+font-weight: 100;
+}
+/* calendrier fin*/
+
+/*
+    dashboard end
+*/
