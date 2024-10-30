@@ -109,13 +109,13 @@ button {
     border-radius: 10px;
     border: 1px solid black;
     margin-top: 5px;
-    background-color: rgb(97, 204, 203);
+    background-color: red;
     font-weight: bold;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: blueviolet;
+    background-color: rgb(97, 204, 203);
 }
 
 .modification{
@@ -151,7 +151,7 @@ button:hover {
 .buttons-container {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Espace entre les boutons */
+    gap: 10px; 
     margin: 20px;
 }
 
