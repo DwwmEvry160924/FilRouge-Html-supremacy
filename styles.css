@@ -6,6 +6,7 @@
 
 header {
     height: 80px;
+
     width: 100%;
     background-color:rgb(97, 204, 203) ;
 }
@@ -183,6 +184,10 @@ footer {
     height: 80px;
     width: 100%;
     background-color: rgb(97, 204, 203) ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
 
     h2 {
         margin: 25px;
@@ -198,6 +203,114 @@ footer {
     }
 
 }
+/* style css page profil */
+
+.connexion-form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.connexion-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.connexion-form {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: grey;
+    box-shadow: 0 0 10px black;
+    padding: 50px;
+    height: 250px;
+    margin: 200px;   
+    width: 250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 5px;
+    background-color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(97, 204, 203);
+}
+
+.modification{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.notification-icon{
+    position: relative;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.notification-badge{
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+#profil{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.main{
+    background-image: image();
+}
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin: 20px;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profil-photo {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 2px solid black;
+    margin-top: 100px; 
+}
+
+
 
 
 

@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Roboto Mono", monospace;
+}
+
+header {
+    height: 80px;
+
+    width: 100%;
+    background-color:rgb(97, 204, 203) ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+
+.navbar-gauche{
+    display: flex;
+    
+    align-items: center;
+    gap: 40px;
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        
+    }
+}
+
+.navbar-droite{
+    display: flex;
+    gap: 20px;
+    margin-right: 25px;
+}
+
+
+
+footer {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(97, 204, 203) ;
+
+    h2 {
+        margin: 25px;
+        position: absolute;
+        right: 0;
+        
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+}
+.connexion-form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.connexion-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.connexion-form {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: grey;
+    box-shadow: 0 0 10px black;
+    padding: 50px;
+    height: 250px;
+    margin: 50px;   
+    width: 250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 5px;
+    background-color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(97, 204, 203);
+}
+
+.modification{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.notification-icon{
+    position: relative;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.notification-badge{
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+#profil{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px;
+    margin: 150px;
+    flex-direction: row;
+    margin: 20px;
+ 
+}
+
+
+
+.box {
+    border: 1px solid black;
+    margin: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+}
+
+.box:nth-child(1) {
+    background-color: grey;
+
+}
+
+.box:nth-child(2) {
+    background-color: grey;
+}
+
+.box:nth-child(3) {
+    background-color: grey;
+}
+
+.box:nth-child(4) {
+    background-color: grey;
+}
+
+.box:nth-child(5) {
+    background-color: grey;
+}
+.btn.box{
+    display: flex;
+    align-items: space-between;
+    flex-direction: row;
+}
+.container{
+    display: flex;
+   align-content: space-around;
+}
+.box {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+   
+  }
+
+
+
+
+.main{
+    
+   
+}
