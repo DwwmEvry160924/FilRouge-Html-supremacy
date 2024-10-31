@@ -196,7 +196,7 @@ h2{
   border: 1px solid black;
   border-radius: 5px;
   padding: 20px;
-  margin: 30px;
+  margin: 20px;
   width: 300px;
   height: 100px;
   box-shadow: 0 4px 8px black;
@@ -265,4 +265,14 @@ h2{
 .btn-commentaire{
   display: flex;
   justify-content: space-around;
+}
+
+/* page gestion espace equipe admin */
+
+.orange{
+  background-color: orange;
+}
+
+.bleu{
+  background-color: blue;
 }
