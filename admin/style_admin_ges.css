@@ -1,62 +1,71 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family:"Roboto Mono", monospace;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
 }
 
 header {
-    height: 80px;
-
-    width: 100%;
-    background-color:rgb(97, 204, 203) ;
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(0.25turn, rgb(78, 205, 196), rgb(41, 47, 54));
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+  }
+
+  i {
+      color: #ffffff;
+  }
 }
 
-.navbar-gauche{
+.navbar-gauche {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-    a {
-        text-decoration: none;
-        font-weight: bold;
-        color: black;        
-    }
+.navbar-droite {
+  display: flex;
+  gap: 30px;
+  margin-right: 25px;
 
-.navbar-droite{
-    display: flex;
-    gap: 30px;
-    margin-right: 25px;
 }
 
 .navbar {
-    display: flex;
-    gap: 20px;
-}  
+  display: flex;
+  gap: 20px;
+}
+
+html {
+  background-color: #F7FFF7;
+}
 
 footer {
-    height: 80px;
-    width: 100%;
-    background-color: rgb(97, 204, 203) ;
+  height: 80px;
+  width: 100%;
+  background-color: #292F36;
 
-    h2 {
-        margin: 25px;
-        position: absolute;
-        right: 0;
-        
-    }
+  h2 {
+      margin: 25px;
+      position: absolute;
+      right: 0;
 
-    a {
-        text-decoration: none;
-        font-weight: bold;
-        color: black;
-    }
+  }
+
+  a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+  }
+
 }
 .connexion-form h1 {
     text-align: center;
@@ -79,7 +88,7 @@ footer {
     box-shadow: 0 0 10px black;
     padding: 50px;
     height: 250px;
-    margin: 50px;   
+    margin: 50px;
     width: 250px;
 }
 
@@ -114,7 +123,7 @@ button:hover {
 .modification{
     display: flex;
     justify-content: space-around;
-    
+
 }
 .notification-icon{
     position: relative;
@@ -151,7 +160,7 @@ h2{
     margin: 150px;
     flex-direction: row;
     margin: 20px;
- 
+
 }
 
 
@@ -198,15 +207,15 @@ h2{
    align-content: space-around;
 }
 .box {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
 .button-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     width: 100%;
    }
 .button-group {
@@ -217,6 +226,6 @@ h2{
 
 
 .main{
-    
-   
+
+
 }

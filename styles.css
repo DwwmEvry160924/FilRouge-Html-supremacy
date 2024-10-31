@@ -1,43 +1,71 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family:"Roboto Mono", monospace;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
 }
 
 header {
-    height: 80px;
-
-    width: 100%;
-    background-color:rgb(97, 204, 203) ;
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(0.25turn, rgb(78, 205, 196), rgb(41, 47, 54));
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    a {
-        text-decoration: none;
-        font-weight: bold;
-        color: black;
-    }
+  a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+  }
+
+  i {
+      color: #ffffff;
+  }
 }
 
-.navbar-gauche{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.navbar-gauche {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.navbar-droite{
-    display: flex;
-    gap: 30px;
-    margin-right: 25px;
+.navbar-droite {
+  display: flex;
+  gap: 30px;
+  margin-right: 25px;
+
 }
 
 .navbar {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+html {
+  background-color: #F7FFF7;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #292F36;
+
+  h2 {
+      margin: 25px;
+      position: absolute;
+      right: 0;
+
+  }
+
+  a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+  }
+
 }
 
 
@@ -149,7 +177,7 @@ nav {
 /* PAGES FONCTIONNALITES */
 .fonctionnalites-titre{
     text-align: center;
-    
+
 }
 .fonctionnalites-texte p{
     margin: 5px;
@@ -170,17 +198,17 @@ nav {
     top: 100;
     background-color: white;
     position: absolute;
-    box-shadow: black;       
+    box-shadow: black;
 }
 .nav-fonc:hover .fonctionnalites-dropdown{
-    display: block;       
+    display: block;
 }
 .fonctionnalites-dropdown li:hover{
     text-decoration: none;
     /* opacity: 70%; */
     background-color: gray;
     cursor: pointer;
-}  
+}
 footer {
     height: 80px;
     width: 100%;
@@ -188,7 +216,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    
+
 
     h2 {
         margin: 25px;
@@ -218,7 +246,7 @@ footer {
     align-items: center;
     gap: 40px;
     height: 120vh;
-    margin: 40px;    
+    margin: 40px;
     width: 100%;
 }
 
@@ -229,7 +257,7 @@ footer {
     box-shadow: 0 0 10px black;
     padding: 50px;
     height: 250px;
-   
+
     width: 250px;
 }
 
@@ -261,6 +289,28 @@ button:hover {
     background-color: rgb(97, 204, 203);
 }
 
+.btn-connexion-espace{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-connexion-espace a{
+  text-decoration: none;
+  color: black;
+}
+
+.btn-profil{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.btn-profil a{
+  text-decoration: none;
+  color: black;
+}
 .modification{
     display: flex;
     justify-content: space-around;
@@ -274,9 +324,9 @@ button:hover {
 .buttons-container {
     display: flex;
     justify-content: center;
-    gap: 10px; 
+    gap: 10px;
     margin: 20px;
-    
+
 }
 
 .photo-container {
@@ -286,12 +336,12 @@ button:hover {
 }
 
 .profil-photo {
-    width: 150px; 
+    width: 150px;
     height: 150px;
-    border-radius: 50%; 
+    border-radius: 50%;
     object-fit: cover;
     border: 2px solid black;
-     
+
 }
 
 
