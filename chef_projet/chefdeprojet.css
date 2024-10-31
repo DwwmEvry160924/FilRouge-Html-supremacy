@@ -102,6 +102,18 @@ footer {
     padding-bottom:5px;
 }
 
+.card-projet-chef{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 4px 8px black;
+}
+
 .graph-card-container {
     display: flex;
     justify-content: space-evenly;
