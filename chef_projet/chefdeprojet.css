@@ -148,7 +148,7 @@ footer {
 
 
     /* Segment*/
-    background: conic-gradient(rgb(255, 0, 0) 0deg 80deg,
+    background: conic-gradient(#fbff00 0deg 80deg,
             rgb(0, 68, 255) 80deg 190deg,
             rgb(0, 255, 42) 190deg 360deg);
 }
@@ -443,7 +443,6 @@ footer {
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
-    width: 300px;
     height: 100px;
     box-shadow: 0 4px 8px black;
     /* padding: 0.5rem; */
