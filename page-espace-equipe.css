@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+} 
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color:rgb(97, 204, 203) ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+}
+
+.navbar-gauche{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-droite{
+    display: flex;
+    gap: 30px;
+    margin-right: 25px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+#espace-dequip-main{
+  margin: 10%;
+}
+
+.indicateur-status{
+  display: flex; 
+  align-items: center;
+  gap: 20px;
+}
+
+.gestion-compte-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+.indicateur{
+display: flex;
+gap: 20px;
+
+div{
+  display: flex;
+}
+}
+  
+  .vert{
+    background-color: green;
+  }
+  
+  .orange{
+    background-color: orange;
+  }
+  
+  .bleu{
+    background-color: blue;
+  }
+
+  .card-compte-admin{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px;
+    width: 300px;
+    height: 100px;
+    box-shadow: 0 4px 8px black;
+    background-color: aliceblue;
+    cursor: pointer;
+  }
+  
+  .card-compte-admin:hover{
+    background-color: blueviolet;
+  }
+   
