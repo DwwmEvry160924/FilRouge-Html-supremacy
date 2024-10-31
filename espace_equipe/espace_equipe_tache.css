@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(0.25turn, rgb(78, 205, 196), rgb(41, 47, 54));
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+  }
+
+  i {
+      color: #ffffff;
+  }
+}
+
+.navbar-gauche {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-droite {
+  display: flex;
+  gap: 30px;
+  margin-right: 25px;
+
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+html {
+  background-color: #F7FFF7;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #292F36;
+
+  h2 {
+      margin: 25px;
+      position: absolute;
+      right: 0;
+
+  }
+
+  a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+  }
+
+}
+
+/* page tache espace equipe */
+
+.compte-container{
+  width: 95%;
+  text-align: center;
+}
+
+.compte-header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+h2{
+  margin-top: 20px;
+  margin-right: 8%;
+}
+
+.indicateur-status{
+  display: flex;
+  gap: 20px;
+}
+
+.indicateur-status span{
+  display: flex;
+  align-items: center;
+}
+
+.dot{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.vert{
+  background-color: green;
+}
+
+.orange{
+  background-color: orange;
+}
+
+.bleu{
+  background-color: blue;
+}
+
+.btn-compte{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ligne{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-column{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
