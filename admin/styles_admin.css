@@ -140,16 +140,19 @@ h2{
 /* page gestion compte admin */
 
 .compte-container{
-  width: 90%;
-  max-width: 1200px;
+  width: 95%;
   text-align: center;
 }
 
 .compte-header{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-bottom: 20px;
+}
+
+h2{
+  margin-right: 8%;
 }
 
 .indicateur-status{
@@ -185,7 +188,6 @@ h2{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -194,6 +196,22 @@ h2{
   border: 1px solid black;
   border-radius: 5px;
   padding: 20px;
+  margin: 30px;
+  width: 300px;
+  height: 100px;
+  box-shadow: 0 4px 8px black;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.card-compte-admin:hover{
+  background-color: blueviolet;
+}
+
+.card-column{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .btn-compte{
@@ -223,4 +241,28 @@ h2{
   margin: 20px;
   border-radius: 50%;
   background-color: red;
+}
+
+.ligne{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-compte-admin span{
+  display: flex;
+  align-items: center;
+}
+
+.dot-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+/* page gestion commentaire admin */
+
+.btn-commentaire{
+  display: flex;
+  justify-content: space-around;
 }
