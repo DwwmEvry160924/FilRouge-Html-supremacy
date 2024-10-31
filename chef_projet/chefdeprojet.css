@@ -61,6 +61,13 @@ footer {
 /*
     dashboard debut
 */
+
+.card-db-container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
 .data-card-container {
     margin-top: 5rem;
     margin-bottom:5rem;
@@ -74,7 +81,9 @@ footer {
     p{
         font-size: 12px;
     }
-    border-radius: 4px;
+    border: 1px solid black; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
     background-color: #ffffff;
     width: 150px;
     border: #000000 1px solid;
@@ -88,9 +97,14 @@ footer {
 }
 
 .card-graph {
-    width: 450px;
-    border: #000000 1px solid;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 4px 8px black;
 
     h2{
         padding: 8px;
@@ -98,15 +112,19 @@ footer {
 
 }
 
+.card-graph:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
 
 .card-graph-body {
-    margin-top: 7rem;
-    margin-bottom: 3rem;
-    margin-left: 25px;
     display: flex;
-    gap: 40px;
     align-items: center;
+    margin-top: 70px;
+    justify-content: space-evenly;
+    gap: 50px;
 }
+
 
 #chart {
     /* CERCLE*/
@@ -124,6 +142,18 @@ footer {
     );
 }
 
+.texte-graph {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    div{
+        display: flex;
+    }
+
+}
+
+
 
 .separateur {
     margin: 50px;
@@ -132,7 +162,59 @@ footer {
 
 /* calendrier debut*/
 
+.calendar-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px;
+}
+
 /*head calendrier*/
+
+.head-calendar {
+    margin-left: 50px;
+    margin-right: 50px;
+
+    button{
+        width: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        cursor: pointer;
+
+    }
+
+}
+
+.search-bar {
+    display: flex;
+    gap: 15px;
+    margin: 30px;
+    width: max-content;
+    padding: 14px;
+    background-color: #f6f6f6;
+    border-radius: 14px;
+
+    button{
+        height: 40px;
+        width: 40px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+    }
+
+    input{
+        width: 400px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        background-color: #f6f6f6;
+        font-size: 16px;
+    }
+}
+
+
 
 .head-calendar {
     display: flex;
@@ -146,7 +228,6 @@ footer {
 }
 
 .haut-cal button {
-    width: 70px;
     border-radius: 8px;
     border: none;
 }
@@ -156,80 +237,49 @@ footer {
     justify-content: space-between;
 }
 
+.dropdown-btn button {
+    border-radius: 8px;
+    border: none;
+}
+
 .day-btn {
     display: flex;
     gap: 20px;
 }
 
-span {
-    display: flex;
-    align-items: center;
-    width: 70px;
-    height: 30px;
-    padding: 5px;
-    border-radius: 4px;
-    background : #a8a8a8; 
-    color : rgb(0, 0, 0);
-    font-size : 12px;
-    font-variant : small-caps;
-    cursor : pointer;
-    display: block;
-}
-  
-span::after {
-float: right;
-right: 20px;
-content: "+";
-}
-
-.slide {
-width: 100px;
-height: 0px;
-overflow: hidden;
-transition: height .4s ease;
-}
-
-.slide li {
-    width: 100px;
-    font-size: 12px;
-    background-color: #ffffff;
-    padding : 5px;
-}
-
-.slide li:hover {
-    opacity: 60%;
-}
-
-#touch {opacity: 0; height: 0px;}    
-
-#touch:checked + .slide {    
-    height: 150px;
-}
-
-
 /*day-navbar*/
 
 .day-navbar {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    width: 230px;
-    background-color: #e9ecef;
-    border-radius: 8px;
+    height: 40px;
+    background-color: #8C8C8C;
+    padding-left:2px ;
+    padding-right:2px ;
+    border-radius: 4px;
+
 }
 
 
 
 .day-navbar ul {
     display: flex;
-    gap: 10px;
+    gap: 5px;
 
 }
 
 .day-navbar ul li {
-    background-color: #adb5bd ;
-    padding: 3px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    height: 35px;
+    width: 45px;
+    background-color: #adb5bd;
     border-radius: 4px;
+    cursor: pointer;
+
     
 }
 
@@ -237,12 +287,45 @@ transition: height .4s ease;
     background-color: #ffffff;
 }
 
-.filtre-btn button {
-    width: 70px;
+.gauche-btn {
+    display: flex;
+    gap: 50px;
+}
+
+.gauche-btn button {
     border-radius: 8px;
     border: none;
 
 }
+
+.indicateur-status{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .indicateur-status span{
+    display: flex;
+    align-items: center;
+  }
+  
+.dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+  
+  .vert{
+    background-color: green;
+  }
+  
+  .jaune{
+    background-color: yellow;
+  }
+  
+  .bleu{
+    background-color: rgb(13, 0, 255);
+  }
 
 /*day-navbar-end*/
 
@@ -253,9 +336,8 @@ transition: height .4s ease;
     --numDays: 5;
     --numHours: 10;
     --timeHeight: 60px;
-    --calBgColor: #fff1f8;
-    --eventBorderColor: #f2d3d8;
-    --eventColor1: #ffd6d1;
+    --calBgColor: #f8f9fa;
+    --eventBorderColor: #f8f9fa;
     --eventColor2: #fafaa3;
     --eventColor3: #e2f8ff;
     --eventColor4: #d1ffe6;
@@ -329,14 +411,58 @@ grid-row-end: 9;
 .title {
 font-weight: 600;
 margin-bottom: 0.25rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.title-gauche{
+    display: flex;
 }
 
 .event {
-border: 1px solid var(--eventBorderColor);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+border: 1px solid black;
 border-radius: 5px;
-padding: 0.5rem;
-margin: 0 0.5rem;
+padding: 20px;
+margin: 20px;
+width: 300px;
+height: 100px;
+box-shadow: 0 4px 8px black;
+/* padding: 0.5rem; */
+/* margin: 0 0.5rem; */
 background: white;
+}
+
+.event:hover {
+    cursor:grab;
+    opacity: 70%;
+}
+
+
+
+.time{
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-data{
+    display: flex;
+    gap: 10px;    
+}
+.dot-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.dot-btn:hover{
+    background-color: #8C8C8C;
+    cursor: pointer;
+    opacity: 70%;
 }
 
 .space,
@@ -350,20 +476,16 @@ body {
 font-family: system-ui, sans-serif;
 }
 
-.corp-fi {
-background: var(--eventColor1);
+.en-cours {
+background: var(--eventColor4);
 }
 
-.ent-law {
+.en-retard {
 background: var(--eventColor2);
 }
 
-.writing {
+.termines {
 background: var(--eventColor3);
-}
-
-.securities {
-background: var(--eventColor4);
 }
 
 .date {

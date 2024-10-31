@@ -20,7 +20,7 @@
         <nav>
             <!-- partie gauche-->
             <div class="navbar-gauche">
-                <a href="index.html"><img href="/index.html" src="/images/logo.png" alt="" style="height: 80px;"></a>
+                <a href="index.html"><img href="index.html" src="/images/logo.png" alt="" style="height: 80px;"></a>
                 <ul class="navbar" style="list-style-type: none;">
                     <li><a href="">Projets</a></li>
                     <li><a href="">Tâches</a></li>
@@ -28,8 +28,8 @@
             </div>
             <!-- partie droite-->
             <ul class="navbar-droite" style="list-style-type: none;">
-                <li><a href=""><img src="/images/bell.png" alt=""></a></li>
-                <li> <a href=""><img src="/images/person.png" alt=""></a></li>
+                <li><a href=""><i class="bi bi-bell" style="font-size: 25px;"></i></a></li>
+                <li><a href=""><i class="bi bi-person-circle" style="font-size: 25px;"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -86,11 +86,11 @@
                         <!-- graph-->
                         <div id="chart"></div>
                         <!-- graph end-->
-                        <ul>
-                            <li>Projets completées</li>
-                            <li>Projets en cours</li>
-                            <li>Projets en retard</li>
-                        </ul>
+                        <div class="texte-graph" >
+                            <div><span class="dot vert"></span><p>Projet en cours</p></div>
+                            <div><span class="dot jaune"></span><p>Projet en retard</p></div>
+                            <div><span class="dot bleu"></span><p>Projet en terminés</p></div>
+                        </div>
                     </div>
                 </div>
                 <div class="card-graph">
@@ -100,33 +100,31 @@
                         <!-- graph-->
                         <div id="chart"></div>
                         <!-- graph end-->
-                        <ul>
-                            <li>Tâches completées</li>
-                            <li>Tâches en cours</li>
-                            <li>Tâches en retard</li>
-                        </ul>
+                        <div class="texte-graph" >
+                            <div><span class="dot vert"></span><p>Tâches en cours</p></div>
+                            <div><span class="dot jaune"></span><p>Tâches en retard</p></div>
+                            <div><span class="dot bleu"></span><p>Tâches en terminés</p></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <hr class="separateur">
         <section class="calendar-container">
             <div class="hero-calendar">
-                <div class="search-bar">
-                    
-                </div>
+                <form class="search-bar">
+                    <span><i style="font-size: 30px;" class="bi bi-search"></i></span>
+                    <input type="search" placeholder="search" name="" id="">
+                </form>
                 <div class="head-calendar">
                     <div class="haut-cal">
                         <h2>Calendrier</h2>
-                        <button style="height: 40px;"><img src="" alt="">Ajouter</button>
+                        <button style="height: 40px;"><i class="bi bi-plus-circle"></i>Ajouter</button>
                     </div>
                     <hr style="margin: 50px;">
                     <div class="bas-cal">
                         <div class="day-btn">
                             <div class="dropdown-btn">
-                                <ul>
-                                    <li></li>
-                                </ul>
+                                <button style="height: 40px;"><i class="bi bi-calendar"></i>11sep<i class="bi bi-chevron-down"></i></button>
                             </div>
                             <div class="day-navbar">
                                 <ul style="list-style-type: none;">
@@ -137,8 +135,13 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="filtre-btn">
-                            <button style="height: 40px;">Filtrer</button>
+                        <div class="gauche-btn">
+                            <div class="indicateur-status">
+                                <span><span class="dot vert"></span>En cours</span>
+                                <span><span class="dot jaune"></span>En retard</span>
+                                <span><span class="dot bleu"></span>Terminés</span>
+                            </div>
+                            <button style="height: 40px;"><i class="bi bi-funnel"></i>Filtrer</button>
                         </div>
                     </div>
                 </div>
@@ -164,66 +167,126 @@
                             <p class="date-day">Lun</p>
                         </div>
                         <div class="events">
-                            <div class="event start-2 end-5 securities">
-                                <p class="title">Securities Regulation</p>
-                                <p class="time">2 PM - 5 PM</p>
+                            <div class="event start-2 end-5 en-cours">
+                                <div class="title"> 
+                                    <div class="title-gauche">
+                                        <span class="dot vert"></span><p>Projet 1</p>
+                                    </div>  
+                                    <div class="title-droit" >
+                                        <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                                    </div>
+                                </div>
+                                <p class="time"><span>Equipe 1</span><span class="time-data"><i class="bi bi-watch"></i>  13:00 - 16:00</span></p>
                             </div>
                         </div>
                     </div>
                     <div class="day tues">
                         <div class="date">
-                            <p class="date-num">12</p>
-                            <p class="date-day">Tues</p>
+                            <p class="date-num">10</p>
+                            <p class="date-day">Mar</p>
                         </div>
                         <div class="events">
-                            <div class="event start-10 end-12 corp-fi">
-                                <p class="title">Corporate Finance</p>
-                                <p class="time">10 AM - 12 PM</p>
+                            <div class="event start-10 end-12 en-cours">
+                                <div class="title"> 
+                                    <div class="title-gauche">
+                                        <span class="dot vert"></span><p>Projet 1</p>
+                                    </div>  
+                                    <div class="title-droit" >
+                                        <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                                    </div>
+                                </div>
+                                <p class="time"><span>Equipe 1</span><span class="time-data"> <i class="bi bi-watch"></i> 9:00 - 11:00</span></p>
                             </div>
-                            <div class="event start-1 end-4 ent-law">
-                                <p class="title">Entertainment Law</p>
-                                <p class="time">1PM - 4PM</p>
+                            <div class="event start-1 end-4 en-retard">
+                                <div class="title"> 
+                                    <div class="title-gauche">
+                                        <span class="dot jaune"></span><p>Projet 1</p>
+                                    </div>  
+                                    <div class="title-droit" >
+                                        <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                                    </div>
+                                </div>
+                                <p class="time"><span>Equipe 1</span> <span class="time-data"><i class="bi bi-watch"></i> 12:00 - 15:00</span> </p>
                             </div>
                         </div>
                     </div>
                     <div class="day wed">
                         <div class="date">
                             <p class="date-num">11</p>
-                            <p class="date-day">Wed</p>
+                            <p class="date-day">Mer</p>
                         </div>
                         <div class="events">
-                            <div class="event start-12 end-1 writing">
-                                <p class="title">Writing Seminar</p>
-                                <p class="time">11 AM - 12 PM</p>
+                            <div class="event start-10 end-1 termines">
+                                <div class="title"> 
+                                    <div class="title-gauche">
+                                        <span class="dot bleu"></span><p>Projet 1</p>
+                                    </div>  
+                                    <div class="title-droit" >
+                                        <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                                    </div>
+                                </div>
+                                <p class="time"><span>Equipe 1</span> <span class="time-data"><i class="bi bi-watch"></i> 09:00 - 11:00</span> </p>
                             </div>
-                            <div class="event start-2 end-5 securities">
-                                <p class="title">Securities Regulation</p>
-                                <p class="time">2 PM - 5 PM</p>
+                            <div class="event start-2 end-5 en-cours">
+                                <div class="title"> 
+                                    <div class="title-gauche">
+                                        <span class="dot vert"></span><p>Projet 1</p>
+                                    </div>  
+                                    <div class="title-droit" >
+                                        <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                                    </div>
+                                </div>
+                                <p class="time"><span>Equipe 1</span> <span class="time-data"><i class="bi bi-watch"></i> 13:00 - 16:00</span> </p>
                             </div>
                         </div>
                     </div>
                     <div class="day thurs">
                         <div class="date">
                             <p class="date-num">12</p>
-                            <p class="date-day">Thurs</p>
+                            <p class="date-day">Jeu</p>
                         </div>
                         <div class="events">
-                            <div class="event start-10 end-12 corp-fi">
-                                <p class="title">Corporate Finance</p>
-                                <p class="time">10 AM - 12 PM</p>
+                            <div class="event start-10 end-12 en-cours">
+                                <div class="title"> 
+                                    <div class="title-gauche">
+                                        <span class="dot vert"></span><p>Projet 1</p>
+                                    </div>  
+                                    <div class="title-droit" >
+                                        <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                                    </div>
+                                </div>
+                                <p class="time"><span>Equipe 1</span> <span class="time-data"><i class="bi bi-watch"></i> 9:00 - 11:00</span> </p>
                             </div>
-                            <div class="event start-1 end-4 ent-law">
-                                <p class="title">Entertainment Law</p>
-                                <p class="time">1PM - 4PM</p>
+                            <div class="event start-1 end-4 en-retard">
+                                <div class="title"> 
+                                    <div class="title-gauche">
+                                        <span class="dot jaune"></span><p>Projet 1</p>
+                                    </div>  
+                                    <div class="title-droit" >
+                                        <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                                    </div>
+                                </div>
+                                <p class="time"><span>Equipe 1</span> <span class="time-data"> <i class="bi bi-watch"></i> 12:00 - 15:00</span></p>
                             </div>
                         </div>
                     </div>
                     <div class="day fri">
                         <div class="date">
                             <p class="date-num">13</p>
-                            <p class="date-day">Fri</p>
+                            <p class="date-day">Ven</p>
                         </div>
                         <div class="events">
+                            <div class="event start-1 end-4 en-retard">
+                                <div class="title"> 
+                                    <div class="title-gauche">
+                                        <span class="dot jaune"></span><p>Projet 1</p>
+                                    </div>  
+                                    <div class="title-droit" >
+                                        <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                                    </div>
+                                </div>
+                                <p class="time"><span>Equipe 1</span> <span class="time-data"><i class="bi bi-watch"></i> 12:00 - 15:00</span> </p>
+                            </div>
                         </div>
                     </div>
                 </div>
