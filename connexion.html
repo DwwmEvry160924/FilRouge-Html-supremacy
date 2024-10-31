@@ -50,9 +50,45 @@
       <button><a href="chef_projet/index_chef_projet.html">Connexion espace chef de projet</a></button>
       <button><a href="espace_equipe/index_espace_equipe.html">Connexion espace d'équipe</a></button>
     </div>
+    <button id="chatButton" onclick="toggleChat()">Chat</button>
+
+<div id="chatPopup" class="chat-popup">
+    <div class="chat-header">
+        <h3>Chat</h3>
+        <button onclick="toggleChat()">X</button>
+    </div>
+    <div class="chat-body">
+        <p>Bienvenue! Comment puis-je vous aider?</p>
+    </div>
+    <div class="chat-footer">
+        <input type="text" placeholder="Écrivez votre message..." id="chatInput">
+        <button onclick="sendMessage()">Envoyer</button>
+    </div>
+</div>
+
 
     <footer>
         <h2><a href="">Faq</a></h2>
     </footer>
+    <script>
+        function toggleChat() {
+            var chatPopup = document.getElementById("chatPopup");
+            chatPopup.style.display = (chatPopup.style.display === "block") ? "none" : "block";
+        }
+    
+        function sendMessage() {
+            var chatInput = document.getElementById("chatInput");
+            var message = chatInput.value.trim();
+            if (message) {
+                var chatBody = document.querySelector(".chat-body");
+                var newMessage = document.createElement("p");
+                newMessage.textContent = "Vous : " + message;
+                chatBody.appendChild(newMessage);
+                chatInput.value = "";
+                chatBody.scrollTop = chatBody.scrollHeight; 
+            }
+        }
+    </script>
+    
 </body>
 </html>

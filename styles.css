@@ -19,6 +19,7 @@ nav {
       text-decoration: none;
       font-weight: bold;
       color: rgb(0, 0, 0);
+
   }
 
   i {
@@ -35,7 +36,7 @@ nav {
 .navbar-droite {
   display: flex;
   gap: 30px;
-  margin-right: 25px;
+  margin-right: 150px;
 
 }
 
@@ -223,18 +224,17 @@ footer {
     align-items: center;
     gap: 40px;
     height: 120vh;
-    margin: 40px;
+    margin: 30px;
     width: 100%;
 }
 
 .connexion-form {
-    border: 2px solid black;
+    border: 2px solid black;    
     border-radius: 10px;
     background-color: grey;
     box-shadow: 0 0 10px black;
     padding: 50px;
     height: 250px;
-
     width: 250px;
 }
 
@@ -320,6 +320,59 @@ button:hover {
     border: 2px solid black;
 
 }
+ 
+#chatButton {
+    position: fixed;
+    top: 20px;  
+    right: 20px;  
+    background-color: rgb(78, 205, 196);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40%;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    top: 70px; 
+    right: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 300px;
+    max-height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+.chat-header {
+    background-color: rgb(78, 205, 196);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-body {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
 
 
 
