@@ -102,22 +102,13 @@ footer {
     padding-bottom:5px;
 }
 
-.card-projet-chef{
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 5px;
-    width: 500px;
-    height: 400px;
-    box-shadow: 0 4px 8px black;
-}
 
 .graph-card-container {
     display: flex;
     justify-content: space-evenly;
 }
+
+
 
 .card-graph {
     background-color: #ffffff;
@@ -537,3 +528,123 @@ body {
 /*
     dashboard end
 */
+
+/*
+    Page projet
+*/
+
+.card-db-container-projet {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.data-card-container-projet {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.card-data-projet {
+    p {
+        font-size: 12px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
+    background-color: #ffffff;
+    height: 60px;
+    width: 250px;
+    gap: 5px;
+    border: #000000 1px solid;
+    text-align: center;
+    padding-bottom:5px;
+}
+
+.card-projet-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.graph-card-container-projet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+
+    h1{
+        text-align: center;
+    }
+}
+
+.card-graph-projet {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 4px 8px black;
+
+    h2 {
+        padding: 8px;
+    }
+
+}
+
+.liste-projet-head{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-left: 4%;
+    margin-right: 4%;
+
+    button{
+        width: 150px;
+        padding: 5px;
+        color: #ffffff;
+        background-color: #292f36;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+    }
+
+
+}
+
+.liste-projet-head button:hover{
+    opacity: 70%;
+}
+
+
+.liste-projet-container{
+    margin: 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.liste-projet-foot{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+
+    button{
+        width: 150px;
+        padding: 5px;
+        color: #ffffff;
+        background-color: #292f36;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+    }
+
+}
