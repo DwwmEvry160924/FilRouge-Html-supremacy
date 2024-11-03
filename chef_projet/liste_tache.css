@@ -81,14 +81,12 @@ footer {
   border-radius: 10px;
   padding: 20px;
   width: 60%;
-  margin-top: 23px;
+  margin-top: 34px;
 }
 
 .btn-tache{
-  display: flex;
-  justify-content: space-around;
+  margin: 20px;
 }
-
 
 h2{
   margin-top: 20px;
@@ -270,4 +268,14 @@ h2{
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+/*  */
+
+.gestion-compte-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
