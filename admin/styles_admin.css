@@ -218,8 +218,8 @@ h2{
   border-radius: 5px;
   padding: 20px;
   margin: 20px;
-  width: 300px;
-  height: 100px;
+  /* width: 300px; */
+  /* height: 100px; */
   box-shadow: 0 4px 8px black;
   background-color: white;
   cursor: pointer;
@@ -300,19 +300,20 @@ h2{
   background-color: blue;
 }
 
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 800px){
   .navbar-gauche {
     display: flex;
     align-items: center;
-    gap: 15px;
-    font-size: 10px;
+    gap: 5px;
+    font-size: 8px;
   }
 
   .navbar-droite {
     display: flex;
-    gap: 15px;
-    margin-right: 15px;
-    font-size: 10px;
+    gap: 5px;
+    margin-right: 5px;
+    font-size: 8px;
   }
 
   footer {
@@ -342,4 +343,189 @@ h2{
     }
   }
 
+  /* compte et card */
+
+  ul{
+    font-size: 10px;
+  }
+
+  main{
+    font-size: 8px;
+  }
+
+  .dot-btn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+
+  .dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  .gestion-compte-container{
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+  }
+
+  .compte-header{
+    width: 100%;
+  }
+
+  .card-compte-admin{
+    width: 100%;
+    margin: 5px;
+    padding: 5px
+  }
+
+
+}
+
+@media screen and (max-width: 420px){
+  *{
+    padding: 0;
+  }
+  .ligne{
+    display: block
+  }
+
+  .compte-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .card-compte-admin{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 100px;
+    box-shadow: 0 4px 8px black;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  main{
+    font-size: 20px;
+  }
+
+  .dot-btn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+
+  .dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  .card-column{
+    display: block;
+    flex-direction: unset;
+    gap: 0;
+  }
+
+  .gestion-compte-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+/* index admin */
+
+@media screen and (max-width: 900px){
+  .index-container{
+    display: block;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 420px){}
+.row{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.column{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border: 1px solid black;
+  padding: 40px;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 0 4px 8px black;
+}
+
+.index-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.column-admin{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border: 1px solid black;
+  padding: 40px;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 400px;
+  box-shadow: 0 4px 8px black;
+}
+
+button {
+  width: 150px;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #292f36;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  opacity: 70%;
+}
+
+p{
+  text-align: center;
+}
+
+#main-adm {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+
+
+.index-adm-head h2{
+  text-align: center;
 }
