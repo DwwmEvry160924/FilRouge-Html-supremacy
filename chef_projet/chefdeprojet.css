@@ -458,6 +458,11 @@ footer {
     opacity: 70%;
 }
 
+.event button {
+    color: #fff;
+    background-color: #292f36 ;
+    border:none;
+}
 
 
 .time {
@@ -642,9 +647,14 @@ body {
         padding: 5px;
         color: #ffffff;
         background-color: #292f36;
+        border-radius: 8px;
         align-items: center;
         cursor: pointer;
         border: none;
     }
 
+}
+
+.liste-projet-foot button:hover{
+    opacity: 70%;
 }
