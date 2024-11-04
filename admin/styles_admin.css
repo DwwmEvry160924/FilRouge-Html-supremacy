@@ -70,6 +70,8 @@ footer {
 
 /* Page index admin */
 
+
+
 .row{
   display: flex;
   justify-content: space-between;
@@ -84,7 +86,7 @@ footer {
 }
 
 .column{
-  background-color: grey;
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -101,12 +103,10 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-top: 200px;
-  margin-bottom: 200px;
 }
 
 .column-admin{
-  background-color: grey;
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -120,43 +120,60 @@ footer {
 }
 
 button {
+  width: 150px;
   padding: 5px;
-  border-radius: 5px;
-  border: 1px solid black;
-  margin-top: 5px;
-  background-color: rgb(97, 204, 203);
-  font-weight: bold;
+  color: #ffffff;
+  background-color: #292f36;
+  border-radius: 8px;
+  align-items: center;
   cursor: pointer;
+  border: none;
 }
 
 button:hover {
-  background-color: blue;
+  opacity: 70%;
 }
 
 p{
   text-align: center;
 }
-h2{
+
+#main-adm {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+
+
+.index-adm-head h2{
   text-align: center;
 }
 
 /* page gestion compte admin */
 
 .compte-container{
-  width: 95%;
+
   text-align: center;
 }
 
 .compte-header{
+  width: 95%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: flex-end;
   margin-bottom: 20px;
 }
 
+.compte-header-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h2{
   margin-top: 20px;
-  margin-right: 8%;
 }
 
 .indicateur-status{
@@ -204,12 +221,12 @@ h2{
   width: 300px;
   height: 100px;
   box-shadow: 0 4px 8px black;
-  background-color: aliceblue;
+  background-color: white;
   cursor: pointer;
 }
 
 .card-compte-admin:hover{
-  background-color: blueviolet;
+  opacity: 70%;
 }
 
 .card-column{
@@ -221,6 +238,8 @@ h2{
 .btn-compte{
   display: flex;
   justify-content: flex-end;
+  margin-right: 90px;
+  
 }
 
 .color1{
