@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire creation projet</title>
+    <link rel="stylesheet" href="styles_admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 700;
+            font-size: 14px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="date"]:focus,
+        select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 48%;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+       
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 15px 20px;
+                max-width: 90%;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .form-buttons {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Créer un Projet</h2>
+        <form>
+            <div class="form-group">
+                <label for="nom-projet">Nom du projet</label>
+                <input type="text" id="nom-projet" name="nom-projet" placeholder="Entrez le nom du projet" required>
+            </div>
+            <div class="form-group">
+                <label for="description-projet">Description</label>
+                <input type="text" id="description-projet" name="description-projet" placeholder="Entrez une description" required>
+            </div>
+            <div class="form-group">
+                <label for="date-debut">Date de début</label>
+                <input type="date" id="date-debut" name="date-debut" required>
+            </div>
+            <div class="form-group">
+                <label for="date-fin">Date de fin</label>
+                <input type="date" id="date-fin" name="date-fin" required>
+            </div>
+            <div class="form-group">
+                <label for="chef-projet">Chef de projet</label>
+                <input type="text" id="chef-projet" name="chef-projet" placeholder="Nom du chef de projet" required>
+            </div>
+            <div class="form-group">
+                <label for="status">Statut</label>
+                <select id="status" name="status" required>
+                    <option value="">Sélectionnez un statut</option>
+                    <option value="en-cours">En cours</option>
+                    <option value="en-retard">En retard</option>
+                    <option value="termine">Terminé</option>
+                </select>
+            </div>
+            <div class="form-buttons">
+                <button type="submit">Créer</button>
+                <button type="reset">Annuler</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

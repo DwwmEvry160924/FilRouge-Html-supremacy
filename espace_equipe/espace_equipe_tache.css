@@ -73,8 +73,7 @@ footer {
 .tache-container{
   display: flex;
   gap: 40px;
-  width: 90%;
-  max-width: 1200px;
+  
 }
 
 .tache-status{
