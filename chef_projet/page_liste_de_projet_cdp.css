@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(0.25turn, rgb(78, 205, 196), rgb(41, 47, 54));
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+    }
+
+    i {
+        color: #ffffff;
+    }
+}
+
+
+.navbar-gauche {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-droite {
+    display: flex;
+    gap: 30px;
+    margin-right: 25px;
+
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+html {
+    background-color: #F7FFF7;
+}
+
+footer {
+    height: 80px;
+    width: 100%;
+    background-color: #292F36;
+
+    h2 {
+        margin: 25px;
+        position: absolute;
+        right: 0;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+/*
+    dashboard debut
+*/
+
+.card-db-container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.indicateur-status{
+    display: flex;
+    justify-content: center;
+}
+
+.data-card-container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(4, 150px);
+}
+
+.card-data {
+    p {
+        font-size: 12px;
+    }
+
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
+    background-color: #ffffff;
+    width: 150px;
+    border: #000000 1px solid;
+    text-align: center;
+    padding-bottom:5px;
+}
+
+.titre-projet-recent {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px; 
+    color: #333;
+  }
+.titre-liste-projet{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+
+}
+  
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+  }
+.card-graph, .gestion-compte-container {
+    flex: 1; 
+    max-width: 500px; 
+    margin: 0 auto;
+  }
+  
+
+  
+.card-graph {
+    display: flex;
+    margin-top: 200px;  
+    text-align: center;
+  }
+  .card-db-container {
+    padding: 20px;
+  }
+  
+  
+.gestion-compte-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+  }
+  
+.card-compte-admin {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+.graph-card-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+#chart {
+    text-align: left;
+    margin-left: 0;
+}
+.compte-container{
+    width: 95%;
+    text-align: center;
+  }
+  
+  .compte-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  h2{
+    margin-top: 20px;
+    margin-right: 8%;
+  }
+  
+  .indicateur-status{
+    display: flex;
+    gap: 20px;
+  }
+  
+
+  .indicateur-status span{
+    display: flex;
+    align-items: center;
+  }
+  
+  .dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .vert{
+    background-color: green;
+  }
+  
+  .jaune{
+    background-color: yellow;
+  }
+  
+  .rouge{
+    background-color: red;
+  }
+  
+  .gestion-compte-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card-compte-admin{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 100px;
+    box-shadow: 0 4px 8px black;
+    background-color: aliceblue;
+    cursor: pointer;
+  }
+  
+  .card-compte-admin:hover{
+    background-color: rgb(78, 205, 196);
+  }
+  
+  .card-column{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .btn-compte{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .color1{
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: green;
+  }
+  
+  .color2{
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: yellow;
+  }
+  
+  .color3{
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  
+  .ligne{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card-compte-admin span{
+    display: flex;
+    align-items: center;
+  }
+  
+  .dot-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 30px;
+  }
+  
+
+.card-graph {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 4px 8px black;
+
+    h2 {
+        padding: 8px;
+    }
+
+}
+
+.card-graph:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.card-graph-body {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+.btn-commentaire{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+  }
+
+
+#chart {
+    /* CERCLE*/
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #303d48;
+
+
+    /* Segment*/
+    background: conic-gradient(#fbff00 0deg 80deg,
+            rgb(0, 68, 255) 80deg 190deg,
+            rgb(0, 255, 42) 190deg 360deg);
+}
+
+.texte-graph {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    div {
+        display: flex;
+    }
+
+}
+
+
+
+.separateur {
+    margin: 50px;
+
+}
+
+/* calendrier debut*/
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px;
+}
+
+/*head calendrier*/
+
+.head-calendar {
+    margin-left: 50px;
+    margin-right: 50px;
+
+    button {
+        width: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        cursor: pointer;
+
+    }
+
+}
+
+.search-bar {
+    display: flex;
+    gap: 15px;
+    margin: 30px;
+    width: max-content;
+    padding: 14px;
+    background-color: #f6f6f6;
+    border-radius: 14px;
+
+    button {
+        height: 40px;
+        width: 40px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+    }
+
+    input {
+        width: 400px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        background-color: #f6f6f6;
+        font-size: 16px;
+    }
+}
+
+
+
+.head-calendar {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.haut-cal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.haut-cal button {
+    border-radius: 8px;
+    border: none;
+}
+
+.bas-cal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-calendar button:hover {
+    opacity: 70%;
+}
+
+.dropdown-btn button {
+    border-radius: 8px;
+    border: none;
+}
+
+.day-btn {
+    display: flex;
+    gap: 20px;
+}
+
+/*day-navbar*/
+
+.day-navbar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: #8C8C8C;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 4px;
+
+}
+
+
+
+.day-navbar ul {
+    display: flex;
+    gap: 5px;
+
+}
+
+.day-navbar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    height: 35px;
+    width: 45px;
+    background-color: #f6f6f6;
+    border-radius: 4px;
+    cursor: pointer;
+
+
+}
+
+.day-navbar ul li:nth-child(3) {
+    background-color: #ffffff;
+}
+
+.gauche-btn {
+    display: flex;
+    gap: 50px;
+}
+
+.gauche-btn button {
+    border-radius: 8px;
+    border: none;
+
+}
+
+.indicateur-status {
+    display: flex;
+    gap: 20px;
+}
+
+.indicateur-status span {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.vert {
+    background-color: green;
+}
+
+.jaune {
+    background-color: yellow;
+}
+
+.bleu {
+    background-color: rgb(13, 0, 255);
+}
+
+
+body {
+    font-family: system-ui, sans-serif;
+}
+
+.en-cours {
+    background: var(--eventColor4);
+}
+
+.en-retard {
+    background: var(--eventColor2);
+}
+
+.termines {
+    background: var(--eventColor3);
+}
+
+.date {
+    display: flex;
+    gap: 1em;
+}
+
+.date-num {
+    font-size: 3rem;
+    font-weight: 600;
+    display: inline;
+}
+
+.date-day {
+    display: inline;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+
+/* calendrier fin*/
+
+/*
+    dashboard end
+*/
