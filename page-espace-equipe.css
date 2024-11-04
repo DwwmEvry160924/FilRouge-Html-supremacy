@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(97, 204, 203);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+}
+
+.navbar-gauche {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-droite {
+  display: flex;
+  gap: 30px;
+  margin-right: 25px;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+#espace-dequip-main {
+  margin: 5%;
+}
+
+.indicateur-status {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.gestion-compte-container {
+  display: flex;
+  justify-content: end;
+  align-items: left;
+}
+.gestion-compte-container h3{
+  margin-left: 50px;
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.indicateur {
+  display: flex;
+  gap: 20px;
+
+  div {
+    display: flex;
+  }
+}
+
+.vert {
+  background-color: green;
+}
+
+.jaune {
+  background-color: yellow;
+}
+
+.bleu {
+  background-color: blue;
+}
+
+.card-compte-admin {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 30px;
+  width: 300px;
+  height: 100px;
+  box-shadow: 0 4px 8px black;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.card-compte-admin:hover {
+  background-color: blueviolet;
+}
+
+/* test graph */
+
+.card-graph {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  width: 500px;
+  height: 400px;
+  box-shadow: 0 4px 8px black;
+
+  h2 {
+      padding: 8px;
+  }
+
+}
+
+.card-graph:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.texte-graph {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  div {
+      display: flex;
+  }
+
+}
+
+.graph-card-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  
+}
+
+.card-graph-body {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+#chart {
+  /* CERCLE*/
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #303d48;
+
+  /* Segment*/
+  background: conic-gradient(#fbff00 0deg 80deg,
+      rgb(0, 68, 255) 80deg 190deg,
+      rgb(0, 255, 42) 190deg 360deg);
+}
+
+
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #292F36;
+
+  h2 {
+    margin: 25px;
+    position: absolute;
+    right: 0;
+
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+
+}

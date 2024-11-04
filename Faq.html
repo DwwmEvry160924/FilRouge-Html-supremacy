@@ -24,26 +24,22 @@
 </head>
 <body>
     <header>
-        <div class="navbar-gauche">
-            <a href="index.html"><img src="images/logo.png" alt="Logo Quicktask" style="height: 80px;"></a>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="fonctionnalite.html">Fonctionnalités</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-            </nav>
-        </div>
         <nav>
-            <ul class="navbar-droite" style="list-style-type: none;">
+            <!-- partie gauche-->
+            <div class="navbar-gauche">
+                <a href="index.html"><img href="index.html" src="images/logo.png" alt="logo" style="height: 80px;"></a>
+                <ul  class="navbar" style="list-style-type: none;">
+                    <li class="nav-fonc" ><a href="fonctionnalite.html">Fonctionnalités</a></li>
+                </ul>
+            </div>
+            <!-- partie droite-->
+            <ul  class="navbar-droite" style="list-style-type: none;">
                 <li><a href="connexion.html">Se connecter</a></li>
                 <li><a href="inscription.html">S'inscrire</a></li>
-        
             </ul>
-            
-            
         </nav>
     </header>
-    <main>
+    <main id="main-faq">
         <section class="faq-section">
             <h1>Foire Aux Questions (FAQ)</h1>
             <div class="faq-item">
@@ -65,7 +61,8 @@
         </section>
     </main>
     <footer>
-        <h2><a href="Faq.html">Faq</a></h2>
+        <h2 class="p_conf"><a href="politique_de_conf.html">Politique de Confidentialité</a></h2>
+        <h2><a href="#">Faq</a></h2>
     </footer>
 </body>
 </html>
