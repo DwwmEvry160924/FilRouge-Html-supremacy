@@ -75,15 +75,18 @@ footer {
 }
 
 /* Styles pour la FAQ */
-body {
-    font-family: 'Roboto Mono', monospace;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+
+#main-faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
 }
 
 .faq-section {
+    display: flex;
+    flex-direction: column;
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
@@ -265,8 +268,10 @@ button:hover {
 }
 
 .btn-connexion-espace{
+    width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 60px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
@@ -529,3 +534,198 @@ button:hover {
 /*
     Politique de confidentialité end
 */
+
+@media screen and (max-width: 600px) { 
+
+    /*
+        index start    
+    */
+
+    .navbar-gauche {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 10px;
+      }
+      
+      .navbar-droite {
+        display: flex;
+        gap: 15px;
+        margin-right: 15px;
+        font-size: 10px;
+      
+      }
+
+    .hero {
+        
+        height: 200px;
+
+        h1{
+            color: white;
+            font-size: 20px;
+            text-shadow: 2px 2px 2px black;
+            text-align: center;
+            position: relative;
+            top: 85px;
+    
+        }
+
+    
+    }
+
+    .video{
+        margin: 0px;
+    }
+
+    .video iframe{
+        height: 600px;
+
+    }
+
+
+    footer {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+        background-color: #292F36;
+      
+        h2 {
+            margin: 25px;
+            position: absolute;
+            right: 0;
+            font-size: 12px;
+      
+        }
+        .p_conf {
+          margin: 25px;
+          position: absolute;
+          left: 0;
+        }
+      
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+      
+      }
+
+    /*
+        index end  
+    */
+
+    /*
+        connexion start    
+    */
+
+    .connexion-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        border: 2px solid black;    
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 0 10px black;
+        padding: 5px;
+        width: 250px;
+        height: 350px;
+    }
+
+    .connexion-form input{
+        width: 150px;
+    }
+
+    .btn-connexion-espace{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .btn-connexion-espace button{
+        font-size: 12px;
+        width: 80px;
+    }
+
+    .connexion-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        height: 85vh;
+        width: 100%;
+    }
+
+    /*
+        connexion end
+    */
+
+    /*
+        politique de confidentialiité start
+    */
+
+
+    .head-politique{
+        font-size: 12px;
+    }
+
+    /*
+        politique de confidentialiité start
+    */
+
+    /*
+        Faq start
+    */
+
+    .faq-section {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        font-size: 12px;
+    }
+    /*
+        Faq end
+    */
+
+    /*
+        inscription start
+    */
+
+    .inscription-form {
+        font-size: 12px;
+        padding: 30px;
+        width: 200px;
+        height: auto;
+        margin: 0;
+    }
+      
+    /*
+        inscription end
+    */
+
+    /*
+        profil start
+    */
+
+    .buttons-container button{
+
+        width: 80px;
+        font-size: 8px;
+
+
+    }
+
+    /*
+        profil start
+    */
+
+}
