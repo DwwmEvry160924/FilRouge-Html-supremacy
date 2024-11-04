@@ -34,57 +34,73 @@
             </div>
             <div class="indicateur">
                 <div><span class="dot vert"></span><span>En cours</span></div>
-                <div><span class="dot orange"></span><span>En retard</span></div>
+                <div><span class="dot jaune"></span><span>En retard</span></div>
                 <div><span class="dot bleu"></span><span>Terminé</span></div>
             </div>
         </section>
 
 
-        <div class="gestion-compte-container">
-            <div class="ligne">
-                <div class="card-compte-admin">
-                    <div class="card-column">
-                        <div class="ligne">
-                            <span><span class="dot vert"></span>
-                                <h3>Nom compte</h3>
-                            </span>
-                            <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+
+
+        <div class="graph-card-container">
+            <div class="card-graph">
+                <h2>STATUTS DES PROJETS</h2>
+                <hr>
+                <br>
+                <div class="card-graph-body">
+                    <!-- graph-->
+                    <div id="chart"></div>
+                    <!-- graph end-->
+                    <div class="texte-graph">
+                        <div><span class="dot vert"></span>
+                            <p>Projet en cours</p>
                         </div>
-                        <div class="ligne">
-                            <p>Membre 1</p>
-                            <p><i class="bi bi-watch"></i> 1 heure</p>
+                        <div><span class="dot jaune"></span>
+                            <p>Projet en retard</p>
                         </div>
-                    </div>
-                </div>
-                <div class="card-compte-admin">
-                    <div class="card-column">
-                        <div class="ligne">
-                            <span><span class="dot jaune"></span>
-                                <h3>Nom compte</h3>
-                            </span>
-                            <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
-                        </div>
-                        <div class="ligne">
-                            <p>Membre 2</p>
-                            <p><i class="bi bi-watch"></i> 5 heures</p>
+                        <div><span class="dot bleu"></span>
+                            <p>Projet en terminés</p>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="gestion-compte-container">                
+                <div class="ligne">
+                    <h3>Projets récents</h3>
+                    <div class="card-compte-admin"> 
+                        <div class="card-column">
+                            <div class="ligne">
+                                <span><span class="dot vert"></span>
+                                    <h3>Nom compte</h3>
+                                </span>
+                                <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                            </div>
+                            <div class="ligne">
+                                <p>Membre 1</p>
+                                <p><i class="bi bi-watch"></i> 1 heure</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-compte-admin">
+                        <div class="card-column">
+                            <div class="ligne">
+                                <span><span class="dot jaune"></span>
+                                    <h3>Nom compte</h3>
+                                </span>
+                                <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                            </div>
+                            <div class="ligne">
+                                <p>Membre 2</p>
+                                <p><i class="bi bi-watch"></i> 5 heures</p>
+                            </div>
+                        </div>
+                    </div>
 
 
-                <div class="diagramme-circulaire">
-
-                </div>
-                <article>
-                    <form action="">
-
-                    </form>
-                </article>
     </main>
     <footer>
-
-
-
+        <h2><a href="#">Faq</a></h2>
     </footer>
 
 </body>
