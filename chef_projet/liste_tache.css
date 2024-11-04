@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(0.25turn, rgb(78, 205, 196), rgb(41, 47, 54));
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+  }
+
+  i {
+      color: #ffffff;
+  }
+}
+
+.navbar-gauche {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-droite {
+  display: flex;
+  gap: 30px;
+  margin-right: 25px;
+
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+html {
+  background-color: #F7FFF7;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #292F36;
+
+  h2 {
+      margin: 25px;
+      position: absolute;
+      right: 0;
+
+  }
+
+  a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+  }
+
+}
+
+/* page tache espace equipe */
+
+.tache-container{
+  display: flex;
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.tache-status{
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+  margin-top: 34px;
+}
+
+.btn-tache{
+  margin: 20px;
+}
+
+h2{
+  margin-top: 20px;
+  margin-right: 8%;
+}
+
+.indicateur-status{
+  display: flex;
+  gap: 20px;
+}
+
+.indicateur-status span{
+  display: flex;
+  align-items: center;
+}
+
+.dot{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.vert{
+  background-color: green;
+}
+
+.orange{
+  background-color: orange;
+}
+
+.bleu{
+  background-color: blue;
+}
+
+
+.ligne{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* camembert */
+
+.graph-card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-graph {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  width: 500px;
+  height: 400px;
+  box-shadow: 0 4px 8px black;
+
+  h2 {
+      padding: 8px;
+  }
+
+}
+
+.card-graph:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.card-graph-body {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+
+#chart {
+  /* CERCLE*/
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #303d48;
+
+
+  /* Segment*/
+  background: conic-gradient(orange 0deg 80deg,
+          blue 80deg 190deg,
+          green 190deg 360deg);
+}
+
+.texte-graph {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  div {
+      display: flex;
+  }
+
+}
+
+/* fin camembert */
+
+.tache-recente{
+  width: 35%;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.tache-recente h2{
+  margin-bottom: 15px;
+}
+
+.ligne-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-compte-admin span{
+  display: flex;
+  align-items: center;
+}
+
+.dot-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+.tache-column h3{
+  margin-left: 10px;
+}
+
+button {
+  width: 150px;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #292f36;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  opacity: 70%;
+}
+
+p{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+
+.card-compte-admin{
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  height: 100px;
+  box-shadow: 0 4px 8px black;
+  cursor: pointer;
+}
+
+.card-compte-admin:hover{
+  opacity: 70%;
+}
+
+.card-column{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/*  */
+
+.gestion-compte-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
