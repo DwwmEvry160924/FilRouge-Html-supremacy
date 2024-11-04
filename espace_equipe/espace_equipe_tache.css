@@ -70,17 +70,19 @@ footer {
 
 /* page tache espace equipe */
 
+
 .tache-container{
   display: flex;
+  justify-content: center;
   gap: 40px;
-  width: 90%;
-  max-width: 1200px;
 }
 
 .tache-status{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   border-radius: 10px;
   padding: 20px;
-  width: 60%;
   margin-top: 34px;
 }
 
@@ -197,7 +199,6 @@ h2{
 /* fin camembert */
 
 .tache-recente{
-  width: 35%;
   border-radius: 10px;
   padding: 20px;
 }
