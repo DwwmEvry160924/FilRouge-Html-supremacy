@@ -84,7 +84,7 @@ footer {
 }
 
 .column{
-  background-color: grey;
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -106,7 +106,7 @@ footer {
 }
 
 .column-admin{
-  background-color: grey;
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -120,17 +120,18 @@ footer {
 }
 
 button {
+  width: 150px;
   padding: 5px;
-  border-radius: 5px;
-  border: 1px solid black;
-  margin-top: 5px;
-  background-color: rgb(97, 204, 203);
-  font-weight: bold;
+  color: #ffffff;
+  background-color: #292f36;
+  border-radius: 8px;
+  align-items: center;
   cursor: pointer;
+  border: none;
 }
 
 button:hover {
-  background-color: blue;
+  opacity: 70%;
 }
 
 p{
@@ -204,12 +205,12 @@ h2{
   width: 300px;
   height: 100px;
   box-shadow: 0 4px 8px black;
-  background-color: aliceblue;
+  background-color: white;
   cursor: pointer;
 }
 
 .card-compte-admin:hover{
-  background-color: blueviolet;
+  opacity: 70%;
 }
 
 .card-column{

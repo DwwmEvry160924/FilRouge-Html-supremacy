@@ -81,14 +81,12 @@ footer {
   border-radius: 10px;
   padding: 20px;
   width: 60%;
-  margin-top: 23px;
+  margin-top: 34px;
 }
 
 .btn-tache{
-  display: flex;
-  justify-content: space-around;
+  margin: 20px;
 }
-
 
 h2{
   margin-top: 20px;
@@ -143,6 +141,7 @@ h2{
   display: flex;
   flex-direction: column;
   border: 1px solid black;
+  background-color: white;
   padding: 5px;
   border-radius: 5px;
   width: 500px;
@@ -231,17 +230,18 @@ h2{
 }
 
 button {
+  width: 150px;
   padding: 5px;
-  border-radius: 5px;
-  border: 1px solid black;
-  margin-top: 5px;
-  background-color: rgb(97, 204, 203);
-  font-weight: bold;
+  color: #ffffff;
+  background-color: #292f36;
+  border-radius: 8px;
+  align-items: center;
   cursor: pointer;
+  border: none;
 }
 
 button:hover {
-  background-color: blue;
+  opacity: 70%;
 }
 
 p{
@@ -253,6 +253,7 @@ h2{
 
 .card-compte-admin{
   border: 1px solid black;
+  background-color: white;
   border-radius: 5px;
   padding: 20px;
   margin: 20px;
@@ -263,11 +264,21 @@ h2{
 }
 
 .card-compte-admin:hover{
-  background-color: blueviolet;
+  opacity: 70%;
 }
 
 .card-column{
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+/*  */
+
+.gestion-compte-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
