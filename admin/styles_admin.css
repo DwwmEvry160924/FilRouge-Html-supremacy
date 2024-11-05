@@ -239,7 +239,7 @@ h2{
   display: flex;
   justify-content: flex-end;
   margin-right: 90px;
-  
+
 }
 
 .color1{
@@ -298,4 +298,198 @@ h2{
 
 .bleu{
   background-color: blue;
+}
+
+@media screen and (max-width: 800px){
+  .navbar-gauche {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 8px;
+  }
+  .navbar-droite {
+    display: flex;
+    gap: 5px;
+    margin-right: 5px;
+    font-size: 8px;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #292F36;
+    h2 {
+        margin: 25px;
+        position: absolute;
+        right: 0;
+        font-size: 12px;
+    }
+    .p_conf {
+      margin: 25px;
+      position: absolute;
+      left: 0;
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+  }
+  /* compte et card */
+  ul{
+    font-size: 10px;
+  }
+  main{
+    font-size: 8px;
+  }
+  .dot-btn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  .gestion-compte-container{
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+  }
+  .compte-header{
+    width: 100%;
+  }
+  .card-compte-admin{
+    width: 100%;
+    margin: 5px;
+    padding: 5px
+  }
+}
+
+@media screen and (max-width: 420px){
+  *{
+    padding: 0;
+  }
+  .ligne{
+    display: block
+  }
+  .compte-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .card-compte-admin{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 100px;
+    box-shadow: 0 4px 8px black;
+    background-color: white;
+    cursor: pointer;
+  }
+  main{
+    font-size: 20px;
+  }
+  .dot-btn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  .card-column{
+    display: block;
+    flex-direction: unset;
+    gap: 0;
+  }
+  .gestion-compte-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+/* index admin */
+
+@media screen and (max-width: 900px){
+  .index-container{
+    display: block;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 420px){
+  .navbar-gauche {
+    /* display: flex; */
+    /* align-items: center; */
+    gap: 5px;
+    font-size: 8px;
+  }
+  .navbar-droite {
+    display: flex;
+    gap: 5px;
+    margin-right: 5px;
+    font-size: 8px;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #292F36;
+    h2 {
+        margin: 25px;
+        position: absolute;
+        right: 0;
+        font-size: 12px;
+    }
+    .p_conf {
+      margin: 25px;
+      position: absolute;
+      left: 0;
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+  }
+
+  .index-container{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .row{
+    /* display: block; */
+    /* justify-content: space-between; */
+    flex-direction: column;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .card{
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .column, .column-admin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 400px;
+    box-shadow: 0 4px 8px black;
+  }
+
 }
