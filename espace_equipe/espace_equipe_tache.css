@@ -4,6 +4,8 @@
   font-family: "Roboto Mono", monospace;
 }
 
+
+
 header {
   height: 80px;
   width: 100%;
@@ -16,13 +18,13 @@ nav {
   align-items: center;
 
   a {
-      text-decoration: none;
-      font-weight: bold;
-      color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
   }
 
   i {
-      color: #ffffff;
+    color: #ffffff;
   }
 }
 
@@ -48,37 +50,39 @@ html {
   background-color: #F7FFF7;
 }
 
+
 footer {
   height: 80px;
   width: 100%;
   background-color: #292F36;
+}
 
-  h2 {
-      margin: 25px;
-      position: absolute;
-      right: 0;
-
-  }
-
-  a {
-      text-decoration: none;
-      font-weight: bold;
-      color: rgb(255, 255, 255);
-  }
+h2 {
+  margin: 25px;
+  position: absolute;
+  right: 0;
 
 }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+
 
 /* page tache espace equipe */
 
 
-.tache-container{
+.tache-container {
   display: flex;
   justify-content: center;
   gap: 40px;
   
 }
 
-.tache-status{
+.tache-status {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -87,46 +91,46 @@ footer {
   margin-top: 34px;
 }
 
-.btn-tache{
+.btn-tache {
   margin: 20px;
 }
 
-h2{
+h2 {
   margin-top: 20px;
   margin-right: 8%;
 }
 
-.indicateur-status{
+.indicateur-status {
   display: flex;
   gap: 20px;
 }
 
-.indicateur-status span{
+.indicateur-status span {
   display: flex;
   align-items: center;
 }
 
-.dot{
+.dot {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-.vert{
+.vert {
   background-color: green;
 }
 
-.orange{
+.orange {
   background-color: orange;
 }
 
-.bleu{
+.bleu {
   background-color: blue;
 }
 
 
-.ligne{
+.ligne {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -137,7 +141,9 @@ h2{
 
 .graph-card-container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-graph {
@@ -151,13 +157,17 @@ h2{
   height: 400px;
   box-shadow: 0 4px 8px black;
 
-  h2 {
-      padding: 8px;
-  }
-
 }
 
+h2 {
+  text-align: center;
+  margin: 0px;
+}
+
+
 .card-graph:hover {
+  display: flex;
+  flex-direction: column;
   opacity: 70%;
   cursor: pointer;
 }
@@ -182,8 +192,8 @@ h2{
 
   /* Segment*/
   background: conic-gradient(orange 0deg 80deg,
-          blue 80deg 190deg,
-          green 190deg 360deg);
+      blue 80deg 190deg,
+      green 190deg 360deg);
 }
 
 .texte-graph {
@@ -192,42 +202,42 @@ h2{
   gap: 5px;
 
   div {
-      display: flex;
+    display: flex;
   }
 
 }
 
 /* fin camembert */
 
-.tache-recente{
+.tache-recente {
   border-radius: 10px;
   padding: 20px;
 }
 
-.tache-recente h2{
+.tache-recente h2 {
   margin-bottom: 15px;
 }
 
-.ligne-container{
+.ligne-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.card-compte-admin span{
+.card-compte-admin span {
   display: flex;
   align-items: center;
 }
 
-.dot-btn{
+.dot-btn {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-left: 30px;
 }
 
-.tache-column h3{
+.tache-column h3 {
   margin-left: 10px;
 }
 
@@ -246,14 +256,15 @@ button:hover {
   opacity: 70%;
 }
 
-p{
-  text-align: center;
-}
-h2{
+p {
   text-align: center;
 }
 
-.card-compte-admin{
+h2 {
+  text-align: center;
+}
+
+.card-compte-admin {
   border: 1px solid black;
   background-color: white;
   border-radius: 5px;
@@ -265,11 +276,11 @@ h2{
   cursor: pointer;
 }
 
-.card-compte-admin:hover{
+.card-compte-admin:hover {
   opacity: 70%;
 }
 
-.card-column{
+.card-column {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -277,7 +288,7 @@ h2{
 
 /*  */
 
-.gestion-compte-container{
+.gestion-compte-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -285,7 +296,7 @@ h2{
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .navbar-gauche {
     display: flex;
     align-items: center;
@@ -308,12 +319,13 @@ h2{
     background-color: #292F36;
 
     h2 {
-        margin: 25px;
-        position: absolute;
-        right: 0;
-        font-size: 12px;
+      margin: 25px;
+      position: absolute;
+      right: 0;
+      font-size: 12px;
 
     }
+
     .p_conf {
       margin: 25px;
       position: absolute;
@@ -321,9 +333,9 @@ h2{
     }
 
     a {
-        text-decoration: none;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
     }
   }
   #chart {
@@ -626,3 +638,27 @@ h2 {
   
 
 }
+
+@media screen and (max-width: 992px) {
+  .tache-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    position: unset;
+  }
+
+  .card-graph {
+    width: 100%;
+    height: unset;
+  }
+
+  .card-compte-admin {
+    margin: unset;
+    margin-top: 2%;
+    width: 90%;
+  } 
+  #chart{width: 20vw;height: 20vh;}
+}
+
