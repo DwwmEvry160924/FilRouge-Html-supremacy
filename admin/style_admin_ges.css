@@ -266,3 +266,32 @@ h2{
   }
 
 }
+@media screen and (max-width: 420px){
+  .compte-header-title{
+    font-size: 20px;
+  }
+
+  nav img{
+    display: none;
+  }
+
+  nav i{
+    font-size: 15px !important;
+  }
+
+  nav{
+    font-size: 10px !important;
+  }
+
+  .navbar{
+    margin-top: 15px;
+  }
+
+  .navbar-droite{
+    margin-top: 15px;
+  }
+
+  button{
+    margin-top: 10px;
+  }
+}
