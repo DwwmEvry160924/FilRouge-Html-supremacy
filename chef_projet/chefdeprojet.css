@@ -523,6 +523,120 @@ body {
     opacity: 70%;
 }
 
+@media screen and (max-width: 1024px) {
+
+    /*
+        index chef de projet start
+    */
+
+    footer{
+
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .data-card-container{
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .card-data{
+        width: 150px;
+        font-size: 10px;
+
+    }
+
+    .graph-card-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 40px;
+    }
+
+    .card-graph-body{
+        gap: 20px;
+
+        .dot{
+            height: 10px;
+            width: 10px;
+        }
+    }
+
+    .card-graph{
+        font-size: 10px;
+        width: 250px;
+        height: 200px;
+    
+        #chart{
+            height: 80px;
+            width: 80px;
+        }
+    
+    }
+
+    .texte-graph{
+        div{
+            font-size: 8px;
+        }
+    }
+
+    .calendar-container{
+        display: none;
+    }
+
+    /*
+        index chef de projet end
+    */
+
+    /*
+        projet chef de projet start
+    */
+
+    .card-db-container-projet{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .data-card-container-projet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .graph-card-container-projet{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .liste-projet-head{
+        font-size: 12px;
+    }
+
+    .card-graph-projet{
+        width: auto;
+        height: auto;
+
+        #chart{
+            height: 80px;
+            width: 80px;
+        }
+
+        .card-graph-body{
+            margin-bottom: 30px;
+        }
+    
+    }
+
+
+
+    .liste-projet-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 @media screen and (max-width: 600px){
   .navbar-gauche {
     display: flex;
