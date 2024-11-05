@@ -284,6 +284,60 @@ h2{
   margin-bottom: 10px;
 }
 
+/* page creation tache  */
+.creation-form h1 {
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+.creation-tache-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 50px;
+}
+
+.creation-form{
+  border: 2px solid black;
+  padding: 60px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+
+button{
+  width: 150px;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #292f36;
+  border-radius: 8px;
+  display: flex;
+ justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  opacity: 70%;
+}
+
+/* page creation tache end */
+
+
 @media screen and (max-width: 600px){
   .navbar-gauche {
     display: flex;
