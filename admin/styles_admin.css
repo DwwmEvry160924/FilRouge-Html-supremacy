@@ -386,7 +386,7 @@ h2{
     border: 1px solid black;
     border-radius: 5px;
     padding: 20px;
-    margin: 20px;
+    /* margin: 20px; */
     width: 300px;
     height: 100px;
     box-shadow: 0 4px 8px black;
@@ -397,10 +397,10 @@ h2{
     font-size: 20px;
   }
   .dot-btn{
-    width: 25px;
-    height: 25px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-right: 5px;
   }
   .dot{
     width: 10px;
@@ -417,6 +417,37 @@ h2{
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  nav i{
+    font-size: 15px !important;
+  }
+
+  nav img{
+    width: 50px;
+    height: 50px;
+  }
+
+  nav{
+    font-size: 10px !important;
+  }
+
+  .card-compte-admin{
+    width: auto;
+  }
+
+  /* .nav{
+    gap: 5px;
+  } */
+
+  .indicateur-status{
+    display: flex;
+    gap: 5px;
+  }
+
+  button{
+    width: auto;
+
   }
 }
 
