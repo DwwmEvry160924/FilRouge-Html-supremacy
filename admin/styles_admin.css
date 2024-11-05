@@ -300,6 +300,18 @@ h2{
   background-color: blue;
 }
 
+@media screen and (max-width: 1500px){
+  .compte-header{
+    width: auto;
+  }
+  .card-compte-admin{
+    width: auto;
+    margin: 5px;
+    padding: 5px
+  }
+
+}
+
 @media screen and (max-width: 800px){
   .navbar-gauche {
     display: flex;
@@ -447,7 +459,6 @@ h2{
 
   button{
     width: auto;
-
   }
 }
 
@@ -523,4 +534,37 @@ h2{
     box-shadow: 0 4px 8px black;
   }
 
+}
+
+@media screen and (max-width: 420px){
+  .compte-header-title{
+    font-size: 20px;
+  }
+
+  nav img{
+    display: none;
+  }
+
+  .navbar{
+    margin-top: 15px;
+  }
+
+  .navbar-droite{
+    margin-top: 15px;
+  }
+
+  .indicateur-status{
+    font-size: 15px;
+  }
+
+  .dot-btn{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+  }
+
+  span h3{
+    font-size: 20px;
+  }
 }
