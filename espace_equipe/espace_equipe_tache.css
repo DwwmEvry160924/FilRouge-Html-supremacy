@@ -4,6 +4,8 @@
   font-family: "Roboto Mono", monospace;
 }
 
+
+
 header {
   height: 80px;
   width: 100%;
@@ -16,13 +18,13 @@ nav {
   align-items: center;
 
   a {
-      text-decoration: none;
-      font-weight: bold;
-      color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
   }
 
   i {
-      color: #ffffff;
+    color: #ffffff;
   }
 }
 
@@ -48,37 +50,39 @@ html {
   background-color: #F7FFF7;
 }
 
+
 footer {
   height: 80px;
   width: 100%;
   background-color: #292F36;
+}
 
-  h2 {
-      margin: 25px;
-      position: absolute;
-      right: 0;
-
-  }
-
-  a {
-      text-decoration: none;
-      font-weight: bold;
-      color: rgb(255, 255, 255);
-  }
+h2 {
+  margin: 25px;
+  position: absolute;
+  right: 0;
 
 }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+
 
 /* page tache espace equipe */
 
 
-.tache-container{
+.tache-container {
   display: flex;
   justify-content: center;
   gap: 40px;
-  
+
 }
 
-.tache-status{
+.tache-status {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -87,46 +91,46 @@ footer {
   margin-top: 34px;
 }
 
-.btn-tache{
+.btn-tache {
   margin: 20px;
 }
 
-h2{
+h2 {
   margin-top: 20px;
   margin-right: 8%;
 }
 
-.indicateur-status{
+.indicateur-status {
   display: flex;
   gap: 20px;
 }
 
-.indicateur-status span{
+.indicateur-status span {
   display: flex;
   align-items: center;
 }
 
-.dot{
+.dot {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-.vert{
+.vert {
   background-color: green;
 }
 
-.orange{
+.orange {
   background-color: orange;
 }
 
-.bleu{
+.bleu {
   background-color: blue;
 }
 
 
-.ligne{
+.ligne {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -137,7 +141,9 @@ h2{
 
 .graph-card-container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-graph {
@@ -151,13 +157,17 @@ h2{
   height: 400px;
   box-shadow: 0 4px 8px black;
 
-  h2 {
-      padding: 8px;
-  }
-
 }
 
+h2 {
+  text-align: center;
+  margin: 0px;
+}
+
+
 .card-graph:hover {
+  display: flex;
+  flex-direction: column;
   opacity: 70%;
   cursor: pointer;
 }
@@ -182,8 +192,8 @@ h2{
 
   /* Segment*/
   background: conic-gradient(orange 0deg 80deg,
-          blue 80deg 190deg,
-          green 190deg 360deg);
+      blue 80deg 190deg,
+      green 190deg 360deg);
 }
 
 .texte-graph {
@@ -192,42 +202,42 @@ h2{
   gap: 5px;
 
   div {
-      display: flex;
+    display: flex;
   }
 
 }
 
 /* fin camembert */
 
-.tache-recente{
+.tache-recente {
   border-radius: 10px;
   padding: 20px;
 }
 
-.tache-recente h2{
+.tache-recente h2 {
   margin-bottom: 15px;
 }
 
-.ligne-container{
+.ligne-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.card-compte-admin span{
+.card-compte-admin span {
   display: flex;
   align-items: center;
 }
 
-.dot-btn{
+.dot-btn {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-left: 30px;
 }
 
-.tache-column h3{
+.tache-column h3 {
   margin-left: 10px;
 }
 
@@ -246,14 +256,15 @@ button:hover {
   opacity: 70%;
 }
 
-p{
-  text-align: center;
-}
-h2{
+p {
   text-align: center;
 }
 
-.card-compte-admin{
+h2 {
+  text-align: center;
+}
+
+.card-compte-admin {
   border: 1px solid black;
   background-color: white;
   border-radius: 5px;
@@ -265,11 +276,11 @@ h2{
   cursor: pointer;
 }
 
-.card-compte-admin:hover{
+.card-compte-admin:hover {
   opacity: 70%;
 }
 
-.card-column{
+.card-column {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -277,7 +288,7 @@ h2{
 
 /*  */
 
-.gestion-compte-container{
+.gestion-compte-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -285,7 +296,62 @@ h2{
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 600px){
+/* page creation tache  */
+.creation-form h1 {
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+.creation-tache-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 50px;
+}
+
+.creation-form{
+  border: 2px solid black;
+  padding: 60px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+
+button{
+  width: 150px;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #292f36;
+  border-radius: 8px;
+  display: flex;
+ justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  opacity: 70%;
+}
+
+/* page creation tache end */
+
+
+
+@media screen and (max-width: 600px) {
   .navbar-gauche {
     display: flex;
     align-items: center;
@@ -308,12 +374,13 @@ h2{
     background-color: #292F36;
 
     h2 {
-        margin: 25px;
-        position: absolute;
-        right: 0;
-        font-size: 12px;
+      margin: 25px;
+      position: absolute;
+      right: 0;
+      font-size: 12px;
 
     }
+
     .p_conf {
       margin: 25px;
       position: absolute;
@@ -321,184 +388,183 @@ h2{
     }
 
     a {
-        text-decoration: none;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
     }
   }
   #chart {
     /* CERCLE*/
-  
+
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background-color: #303d48;
-  
+  }
+  /* Styles de base */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+  }
 
-}
-/* Styles de base */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto Mono", monospace;
-}
+  header {
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(0.25turn, rgb(78, 205, 196), rgb(41, 47, 54));
+  }
 
-header {
-  height: 80px;
-  width: 100%;
-  background: linear-gradient(0.25turn, rgb(78, 205, 196), rgb(41, 47, 54));
-}
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
 
-nav a {
-  text-decoration: none;
-  font-weight: bold;
-  color: rgb(0, 0, 0);
-}
+  .navbar-gauche, .navbar-droite {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 
-.navbar-gauche, .navbar-droite {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
+  .navbar-droite {
+    margin-right: 25px;
+  }
 
-.navbar-droite {
-  margin-right: 25px;
-}
+  html {
+    background-color: #F7FFF7;
+  }
 
-html {
-  background-color: #F7FFF7;
-}
+  footer {
+    height: 80px;
+    width: 100%;
+    background-color: #292F36;
+  }
 
-footer {
-  height: 80px;
-  width: 100%;
-  background-color: #292F36;
-}
+  footer h2 {
+    margin: 25px;
+    position: absolute;
+    right: 0;
+  }
 
-footer h2 {
-  margin: 25px;
-  position: absolute;
-  right: 0;
-}
+  footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
 
-footer a {
-  text-decoration: none;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-}
+  /* Conteneurs de tâches */
+  .tache-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
 
-/* Conteneurs de tâches */
-.tache-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
+  .tache-status {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 34px;
+  }
 
-.tache-status {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 34px;
-}
+  .btn-tache {
+    margin: 20px;
+  }
 
-.btn-tache {
-  margin: 20px;
-}
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
 
-h2 {
-  text-align: center;
-  margin-top: 20px;
-}
+  .indicateur-status {
+    display: flex;
+    gap: 20px;
+  }
 
-.indicateur-status {
-  display: flex;
-  gap: 20px;
-}
+  .indicateur-status span {
+    display: flex;
+    align-items: center;
+  }
 
-.indicateur-status span {
-  display: flex;
-  align-items: center;
-}
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
 
-.dot {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
+  .vert { background-color: green; }
+  .orange { background-color: orange; }
+  .bleu { background-color: blue; }
 
-.vert { background-color: green; }
-.orange { background-color: orange; }
-.bleu { background-color: blue; }
+  .ligne {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-.ligne {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  /* Graphiques */
+  .graph-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* Graphiques */
-.graph-card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .card-graph {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 4px 8px black;
 
-.card-graph {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-  background-color: white;
-  padding: 5px;
-  border-radius: 5px;
-  width: 500px;
-  height: 400px;
-  box-shadow: 0 4px 8px black;
-
-}
-h2 {
-  text-align: center;
-  margin: 0px;
-}
+  }
+  h2 {
+    text-align: center;
+    margin: 0px;
+  }
 
 
-/* Conteneur de comptes */
-.compte-container-card {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
+  /* Conteneur de comptes */
+  .compte-container-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-.card-compte-admin {
-  border: 1px solid black;
-  background-color: white;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 20px;
-  width: 300px;
-  box-shadow: 0 4px 8px black;
-  cursor: pointer;
-}
+  .card-compte-admin {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px black;
+    cursor: pointer;
+  }
 
-.card-column {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
+  .card-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 
-.gestion-compte-container {
-  display: flex;
-  gap: 20px;
+  .gestion-compte-container {
+    display: flex;
+    gap: 20px;
+  }
 }
 
 /* Styles Responsifs */
@@ -508,7 +574,7 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 40px;
-    }
+  }
 
   .gestion-compte-container {
     flex-direction: column;
@@ -541,17 +607,20 @@ h2 {
 
     ul li{
       font-size: 12px;
-      
+
     }
     .dot{
       width: 10px;
       height: 10px;
       margin: 10px;
-    
+
 
     }
-  
+  }
 }
+
+
+
 /*end page liste projet equipe*/
 
 
@@ -566,11 +635,10 @@ h2 {
   }
 }
 
-      font-size: 12px;
-    }
-    
-  }
-  
+/* font-size: 12px;
+}
+} */
+
 @media  screen and (max-width:600px) {
   .tache-container {
     display: flex;
@@ -598,13 +666,13 @@ h2 {
 
     ul li{
       font-size: 12px;
-      
+
     }
     .dot{
       width: 10px;
       height: 10px;
       margin: 10px;
-    
+
 
     }
     .gestion-compte-container {
@@ -612,7 +680,7 @@ h2 {
       align-items: center;
       width: 100%;
     }
-  
+
     .compte-container-card {
       flex-direction: column;
       align-items: center;
@@ -622,7 +690,30 @@ h2 {
       max-width: 300px;
       font-size: 12px;
     }
-  }  
-  
+  }
 
+
+}
+
+@media screen and (max-width: 992px) {
+  .tache-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    position: unset;
+  }
+
+  .card-graph {
+    width: 100%;
+    height: unset;
+  }
+
+  .card-compte-admin {
+    margin: unset;
+    margin-top: 2%;
+    width: 90%;
+  }
+  #chart{width: 20vw;height: 20vh;}
 }
