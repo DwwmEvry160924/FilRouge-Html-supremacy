@@ -48,7 +48,7 @@
             <button><a href="espace_equipe/index_espace_equipe.html">Connexion espace d'équipe</a></button>
           </div>
           <button id="chatButton" onclick="toggleChat()">Chat</button>
-      
+
         <div id="chatPopup" class="chat-popup">
             <div class="chat-header">
                 <h3>Chat</h3>
@@ -65,14 +65,14 @@
     </main>
     <footer>
         <h2 class="p_conf"><a href="politique_de_conf.html">Politique de Confidentialité</a></h2>
-        <h2><a href="#">Faq</a></h2>
+        <h2><a href="Faq.html">Faq</a></h2>
     </footer>
     <script>
         function toggleChat() {
             var chatPopup = document.getElementById("chatPopup");
             chatPopup.style.display = (chatPopup.style.display === "block") ? "none" : "block";
         }
-    
+
         function sendMessage() {
             var chatInput = document.getElementById("chatInput");
             var message = chatInput.value.trim();
@@ -82,10 +82,10 @@
                 newMessage.textContent = "Vous : " + message;
                 chatBody.appendChild(newMessage);
                 chatInput.value = "";
-                chatBody.scrollTop = chatBody.scrollHeight; 
+                chatBody.scrollTop = chatBody.scrollHeight;
             }
         }
     </script>
-    
+
 </body>
 </html>
