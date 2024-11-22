@@ -7,7 +7,7 @@
 header {
   height: 80px;
   width: 100%;
-  background: linear-gradient(0.25turn, rgb(78, 205, 196), rgb(41, 47, 54));
+  background: linear-gradient(0.25turn, #4ecdc4, rgb(41, 47, 54));
 }
 
 nav {
