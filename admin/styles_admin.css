@@ -60,6 +60,12 @@ footer {
 
   }
 
+  .p_conf {
+    margin: 25px;
+    position: absolute;
+    left: 0;
+  }
+
   a {
       text-decoration: none;
       font-weight: bold;
