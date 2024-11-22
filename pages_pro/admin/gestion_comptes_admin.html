@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion projet admin</title>
+    <title>Gestion compte admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="styles_admin.css">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/styles_admin.css">
+    <link rel="shortcut icon" href="../../assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
 
             <!-- partie gauche-->
               <div class="navbar-gauche">
-                <a href="index_admin.html"><img src="../images/logo.png" alt="" style="height: 80px;"></a>
+                <a href="index_admin.html"><img src="../../assets/images/logo.png" alt="" style="height: 80px;"></a>
                   <ul  class="navbar" style="list-style-type: none;">
                       <li class="nav-fonc"><a href="gestion_comptes_admin.html">Comptes</a></li>
                       <li class="nav-fonc"><a href="gestion_commentaire_admin.html">Commentaires</a></li>
@@ -29,7 +29,7 @@
               <!-- partie droite-->
               <ul  class="navbar-droite" style="list-style-type: none;">
                 <li><a href="#"><i class="bi bi-bell" style="font-size: 25px;"></i></a></li>
-                <li><a href="../profil.html"><i class="bi bi-person-circle" style="font-size: 25px;"></i></a></li>
+                <li><a href="../../pages/profil.html"><i class="bi bi-person-circle" style="font-size: 25px;"></i></a></li>
               </ul>
             </div>
         </nav>
@@ -37,22 +37,20 @@
     <main>
 
       <div class="compte-container">
-        <div class="compte-header-title">
-          <h2>Gestion des projets</h2>
-        </div>
+          <div class="compte-header-title">
+            <h2>Gestion des comptes</h2>
+          </div>
         <div class="compte-header">
           <div class="indicateur-status">
-            <span><span class="dot vert"></span>En cours</span>
-            <span><span class="dot orange"></span>En retard</span>
-            <span><span class="dot bleu"></span>Terminé</span>
+            <span><span class="dot vert"></span>Actif</span>
+            <span><span class="dot jaune"></span>Inactif</span>
+            <span><span class="dot rouge"></span>Supprimé</span>
           </div>
         </div>
-        <div class="btn-commentaire">
-          <button>Modifier</button>
-          <button>Ajouter</button>
+
+        <div class="btn-compte">
           <button>Supprimer</button>
         </div>
-
 
 
       </div>
@@ -65,36 +63,163 @@
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot orange"></span><h3>Projet</h3></span>
+                  <span><span class="dot vert"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 1</p>
-                  <p><i class="bi bi-watch"></i> 4 jours</p>
+                  <p>Membre 1</p>
+                  <p><i class="bi bi-watch"></i> 6 heures</p>
                 </div>
               </div>
             </div>
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot vert"></span><h3>Projet</h3></span>
+                  <span><span class="dot jaune"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 2</p>
-                  <p><i class="bi bi-watch"></i> 5 jours</p>
+                  <p>Membre 2</p>
+                  <p><i class="bi bi-watch"></i> 5 heures</p>
                 </div>
               </div>
             </div>
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot bleu"></span><h3>Projet</h3></span>
+                  <span><span class="dot rouge"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 3</p>
-                  <p><i class="bi bi-watch"></i> 2 jours</p>
+                  <p>Membre 3</p>
+                  <p><i class="bi bi-watch"></i> 2 heures</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gestion-compte-container">
+          <div class="ligne">
+            <div class="card-compte-admin">
+              <div class="card-column">
+                <div class="ligne">
+                  <span><span class="dot vert"></span><h3>Nom compte</h3></span>
+                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                </div>
+                <div class="ligne">
+                  <p>Membre 1</p>
+                  <p><i class="bi bi-watch"></i> 6 heures</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-compte-admin">
+              <div class="card-column">
+                <div class="ligne">
+                  <span><span class="dot vert"></span><h3>Nom compte</h3></span>
+                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                </div>
+                <div class="ligne">
+                  <p>Membre 2</p>
+                  <p><i class="bi bi-watch"></i> 5 heures</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-compte-admin">
+              <div class="card-column">
+                <div class="ligne">
+                  <span><span class="dot jaune"></span><h3>Nom compte</h3></span>
+                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                </div>
+                <div class="ligne">
+                  <p>Membre 3</p>
+                  <p><i class="bi bi-watch"></i> 2 heures</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="gestion-compte-container">
+          <div class="ligne">
+            <div class="card-compte-admin">
+              <div class="card-column">
+                <div class="ligne">
+                  <span><span class="dot vert"></span><h3>Nom compte</h3></span>
+                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                </div>
+                <div class="ligne">
+                  <p>Membre 1</p>
+                  <p><i class="bi bi-watch"></i> 6 heures</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-compte-admin">
+              <div class="card-column">
+                <div class="ligne">
+                  <span><span class="dot jaune"></span><h3>Nom compte</h3></span>
+                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                </div>
+                <div class="ligne">
+                  <p>Membre 2</p>
+                  <p><i class="bi bi-watch"></i> 5 heures</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-compte-admin">
+              <div class="card-column">
+                <div class="ligne">
+                  <span><span class="dot jaune"></span><h3>Nom compte</h3></span>
+                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                </div>
+                <div class="ligne">
+                  <p>Membre 3</p>
+                  <p><i class="bi bi-watch"></i> 2 heures</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="gestion-compte-container">
+          <div class="ligne">
+            <div class="card-compte-admin">
+              <div class="card-column">
+                <div class="ligne">
+                  <span><span class="dot rouge"></span><h3>Nom compte</h3></span>
+                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                </div>
+                <div class="ligne">
+                  <p>Membre 1</p>
+                  <p><i class="bi bi-watch"></i> 6 heures</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-compte-admin">
+              <div class="card-column">
+                <div class="ligne">
+                  <span><span class="dot vert"></span><h3>Nom compte</h3></span>
+                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                </div>
+                <div class="ligne">
+                  <p>Membre 2</p>
+                  <p><i class="bi bi-watch"></i> 5 heures</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-compte-admin">
+              <div class="card-column">
+                <div class="ligne">
+                  <span><span class="dot jaune"></span><h3>Nom compte</h3></span>
+                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+                </div>
+                <div class="ligne">
+                  <p>Membre 3</p>
+                  <p><i class="bi bi-watch"></i> 2 heures</p>
                 </div>
               </div>
             </div>
@@ -107,36 +232,36 @@
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot bleu"></span><h3>Projet</h3></span>
+                  <span><span class="dot vert"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 1</p>
-                  <p><i class="bi bi-watch"></i> 4 jours</p>
+                  <p>Membre 1</p>
+                  <p><i class="bi bi-watch"></i> 6 heures</p>
                 </div>
               </div>
             </div>
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot vert"></span><h3>Projet</h3></span>
+                  <span><span class="dot rouge"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 2</p>
-                  <p><i class="bi bi-watch"></i> 5 jours</p>
+                  <p>Membre 2</p>
+                  <p><i class="bi bi-watch"></i> 5 heures</p>
                 </div>
               </div>
             </div>
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot bleu"></span><h3>Projet</h3></span>
+                  <span><span class="dot rouge"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 3</p>
-                  <p><i class="bi bi-watch"></i> 2 jours</p>
+                  <p>Membre 3</p>
+                  <p><i class="bi bi-watch"></i> 2 heures</p>
                 </div>
               </div>
             </div>
@@ -149,36 +274,36 @@
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot bleu"></span><h3>Projet</h3></span>
+                  <span><span class="dot vert"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 1</p>
-                  <p><i class="bi bi-watch"></i> 4 jours</p>
+                  <p>Membre 1</p>
+                  <p><i class="bi bi-watch"></i> 6 heures</p>
                 </div>
               </div>
             </div>
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot orange"></span><h3>Projet</h3></span>
+                  <span><span class="dot jaune"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 2</p>
-                  <p><i class="bi bi-watch"></i> 5 jours</p>
+                  <p>Membre 2</p>
+                  <p><i class="bi bi-watch"></i> 5 heures</p>
                 </div>
               </div>
             </div>
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot vert"></span><h3>Projet</h3></span>
+                  <span><span class="dot jaune"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 3</p>
-                  <p><i class="bi bi-watch"></i> 2 jours</p>
+                  <p>Membre 3</p>
+                  <p><i class="bi bi-watch"></i> 2 heures</p>
                 </div>
               </div>
             </div>
@@ -191,36 +316,36 @@
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot bleu"></span><h3>Projet</h3></span>
+                  <span><span class="dot vert"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 1</p>
-                  <p><i class="bi bi-watch"></i> 4 jours</p>
+                  <p>Membre 1</p>
+                  <p><i class="bi bi-watch"></i> 6 heures</p>
                 </div>
               </div>
             </div>
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot orange"></span><h3>Projet</h3></span>
+                  <span><span class="dot vert"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 2</p>
-                  <p><i class="bi bi-watch"></i> 5 jours</p>
+                  <p>Membre 2</p>
+                  <p><i class="bi bi-watch"></i> 5 heures</p>
                 </div>
               </div>
             </div>
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot vert"></span><h3>Projet</h3></span>
+                  <span><span class="dot rouge"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 3</p>
-                  <p><i class="bi bi-watch"></i> 2 jours</p>
+                  <p>Membre 3</p>
+                  <p><i class="bi bi-watch"></i> 2 heures</p>
                 </div>
               </div>
             </div>
@@ -233,258 +358,90 @@
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot orange"></span><h3>Projet</h3></span>
+                  <span><span class="dot vert"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 1</p>
-                  <p><i class="bi bi-watch"></i> 4 jours</p>
+                  <p>Membre 1</p>
+                  <p><i class="bi bi-watch"></i> 6 heures</p>
                 </div>
               </div>
             </div>
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot bleu"></span><h3>Projet</h3></span>
+                  <span><span class="dot jaune"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 2</p>
-                  <p><i class="bi bi-watch"></i> 5 jours</p>
+                  <p>Membre 2</p>
+                  <p><i class="bi bi-watch"></i> 5 heures</p>
                 </div>
               </div>
             </div>
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot vert"></span><h3>Projet</h3></span>
+                  <span><span class="dot vert"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 3</p>
-                  <p><i class="bi bi-watch"></i> 2 jours</p>
+                  <p>Membre 3</p>
+                  <p><i class="bi bi-watch"></i> 2 heures</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
 
         <div class="gestion-compte-container">
           <div class="ligne">
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot bleu"></span><h3>Projet</h3></span>
+                  <span><span class="dot vert"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 1</p>
-                  <p><i class="bi bi-watch"></i> 4 jours</p>
+                  <p>Membre 1</p>
+                  <p><i class="bi bi-watch"></i> 6 heures</p>
                 </div>
               </div>
             </div>
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot vert"></span><h3>Projet</h3></span>
+                  <span><span class="dot rouge"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 2</p>
-                  <p><i class="bi bi-watch"></i> 5 jours</p>
+                  <p>Membre 2</p>
+                  <p><i class="bi bi-watch"></i> 5 heures</p>
                 </div>
               </div>
             </div>
             <div class="card-compte-admin">
               <div class="card-column">
                 <div class="ligne">
-                  <span><span class="dot orange"></span><h3>Projet</h3></span>
+                  <span><span class="dot jaune"></span><h3>Nom compte</h3></span>
                   <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
                 </div>
                 <div class="ligne">
-                  <p>Chef de projet 3</p>
-                  <p><i class="bi bi-watch"></i> 2 jours</p>
+                  <p>Membre 3</p>
+                  <p><i class="bi bi-watch"></i> 2 heures</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-
-        <div class="gestion-compte-container">
-          <div class="ligne">
-            <div class="card-compte-admin">
-              <div class="card-column">
-                <div class="ligne">
-                  <span><span class="dot orange"></span><h3>Projet</h3></span>
-                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
-                </div>
-                <div class="ligne">
-                  <p>Chef de projet 1</p>
-                  <p><i class="bi bi-watch"></i> 4 jours</p>
-                </div>
-              </div>
-            </div>
-            <div class="card-compte-admin">
-              <div class="card-column">
-                <div class="ligne">
-                  <span><span class="dot vert"></span><h3>Projet</h3></span>
-                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
-                </div>
-                <div class="ligne">
-                  <p>Chef de projet 2</p>
-                  <p><i class="bi bi-watch"></i> 5 jours</p>
-                </div>
-              </div>
-            </div>
-            <div class="card-compte-admin">
-              <div class="card-column">
-                <div class="ligne">
-                  <span><span class="dot bleu"></span><h3>Projet</h3></span>
-                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
-                </div>
-                <div class="ligne">
-                  <p>Chef de projet 3</p>
-                  <p><i class="bi bi-watch"></i> 2 jours</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="gestion-compte-container">
-          <div class="ligne">
-            <div class="card-compte-admin">
-              <div class="card-column">
-                <div class="ligne">
-                  <span><span class="dot bleu"></span><h3>Projet</h3></span>
-                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
-                </div>
-                <div class="ligne">
-                  <p>Chef de projet 1</p>
-                  <p><i class="bi bi-watch"></i> 4 jours</p>
-                </div>
-              </div>
-            </div>
-            <div class="card-compte-admin">
-              <div class="card-column">
-                <div class="ligne">
-                  <span><span class="dot orange"></span><h3>Projet</h3></span>
-                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
-                </div>
-                <div class="ligne">
-                  <p>Chef de projet 2</p>
-                  <p><i class="bi bi-watch"></i> 5 jours</p>
-                </div>
-              </div>
-            </div>
-            <div class="card-compte-admin">
-              <div class="card-column">
-                <div class="ligne">
-                  <span><span class="dot vert"></span><h3>Projet</h3></span>
-                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
-                </div>
-                <div class="ligne">
-                  <p>Chef de projet 3</p>
-                  <p><i class="bi bi-watch"></i> 2 jours</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="gestion-compte-container">
-          <div class="ligne">
-            <div class="card-compte-admin">
-              <div class="card-column">
-                <div class="ligne">
-                  <span><span class="dot orange"></span><h3>Projet</h3></span>
-                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
-                </div>
-                <div class="ligne">
-                  <p>Chef de projet 1</p>
-                  <p><i class="bi bi-watch"></i> 4 jours</p>
-                </div>
-              </div>
-            </div>
-            <div class="card-compte-admin">
-              <div class="card-column">
-                <div class="ligne">
-                  <span><span class="dot bleu"></span><h3>Projet</h3></span>
-                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
-                </div>
-                <div class="ligne">
-                  <p>Chef de projet 2</p>
-                  <p><i class="bi bi-watch"></i> 5 jours</p>
-                </div>
-              </div>
-            </div>
-            <div class="card-compte-admin">
-              <div class="card-column">
-                <div class="ligne">
-                  <span><span class="dot bleu"></span><h3>Projet</h3></span>
-                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
-                </div>
-                <div class="ligne">
-                  <p>Chef de projet 3</p>
-                  <p><i class="bi bi-watch"></i> 2 jours</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="gestion-compte-container">
-          <div class="ligne">
-            <div class="card-compte-admin">
-              <div class="card-column">
-                <div class="ligne">
-                  <span><span class="dot orange"></span><h3>Projet</h3></span>
-                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
-                </div>
-                <div class="ligne">
-                  <p>Chef de projet 1</p>
-                  <p><i class="bi bi-watch"></i> 4 jours</p>
-                </div>
-              </div>
-            </div>
-            <div class="card-compte-admin">
-              <div class="card-column">
-                <div class="ligne">
-                  <span><span class="dot orange"></span><h3>Projet</h3></span>
-                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
-                </div>
-                <div class="ligne">
-                  <p>Chef de projet 2</p>
-                  <p><i class="bi bi-watch"></i> 5 jours</p>
-                </div>
-              </div>
-            </div>
-            <div class="card-compte-admin">
-              <div class="card-column">
-                <div class="ligne">
-                  <span><span class="dot vert"></span><h3>Projet</h3></span>
-                  <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
-                </div>
-                <div class="ligne">
-                  <p>Chef de projet 3</p>
-                  <p><i class="bi bi-watch"></i> 2 jours</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
       </div>
 
     </main>
     <footer>
-      <h2 class="p_conf"><a href="../politique_de_conf.html">Politique de Confidentialité</a></h2>
-      <h2><a href="../Faq.html">Faq</a></h2>
+      <h2 class="p_conf"><a href="../../pages/politique_de_conf.html">Politique de Confidentialité</a></h2>
+      <h2><a href="../../pages/Faq.html">Faq</a></h2>
     </footer>
 </body>
 </html>
