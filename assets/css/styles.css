@@ -229,7 +229,7 @@ footer h2 a {
 
 .connexion-form {
 
-    border: 2px solid black;    
+    border: 2px solid black;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 0 10px black;
@@ -318,18 +318,18 @@ button:hover {
 .profil-photo {
     width: 150px;
     height: 150px;
-    background-image: url(images/ken-pdp.jpg);
+    background-image: url(../images/ken-pdp.jpg);
     background-size: cover;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid black;
 
 }
- 
+
 #chatButton {
     position: fixed;
-    top: 20px;  
-    right: 20px;  
+    top: 20px;
+    right: 20px;
     background-color: black;
     color: white;
     border: none;
@@ -343,7 +343,7 @@ button:hover {
 .chat-popup {
     display: none;
     position: fixed;
-    top: 70px; 
+    top: 70px;
     right: 20px;
     border: 1px solid #ddd;
     background-color: grey;
@@ -447,7 +447,7 @@ button:hover {
 
     height: 1000px;
     background-color: #ffffff;
-    background-image: url(images/work.jpg);
+    background-image: url(../images/work.jpg);
     background-size: cover;
 
     h1{
@@ -507,7 +507,7 @@ button:hover {
 
 .head-politique a:hover{
     color: rgb(78, 205, 196);
-} 
+}
 
 
 
@@ -535,10 +535,10 @@ button:hover {
     Politique de confidentialité end
 */
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 600px) {
 
     /*
-        index start    
+        index start
     */
 
     .navbar-gauche {
@@ -547,17 +547,17 @@ button:hover {
         gap: 15px;
         font-size: 10px;
       }
-      
+
       .navbar-droite {
         display: flex;
         gap: 15px;
         margin-right: 15px;
         font-size: 10px;
-      
+
       }
 
     .hero {
-        
+
         height: 200px;
 
         h1{
@@ -567,10 +567,10 @@ button:hover {
             text-align: center;
             position: relative;
             top: 85px;
-    
+
         }
 
-    
+
     }
 
     .video{
@@ -589,34 +589,34 @@ button:hover {
         height: 80px;
         width: 100%;
         background-color: #292F36;
-      
+
         h2 {
             margin: 25px;
             position: absolute;
             right: 0;
             font-size: 12px;
-      
+
         }
         .p_conf {
           margin: 25px;
           position: absolute;
           left: 0;
         }
-      
+
         a {
             text-decoration: none;
             font-weight: bold;
             color: rgb(255, 255, 255);
         }
-      
+
       }
 
     /*
-        index end  
+        index end
     */
 
     /*
-        connexion start    
+        connexion start
     */
 
     .connexion-form {
@@ -625,7 +625,7 @@ button:hover {
         align-items: center;
         justify-content: center;
         font-size: 12px;
-        border: 2px solid black;    
+        border: 2px solid black;
         border-radius: 10px;
         background-color: white;
         box-shadow: 0 0 10px black;
@@ -707,7 +707,7 @@ button:hover {
         height: auto;
         margin: 0;
     }
-      
+
     /*
         inscription end
     */
