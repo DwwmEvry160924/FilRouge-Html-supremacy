@@ -1,0 +1,731 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(0.25turn, rgb(78, 205, 196), rgb(41, 47, 54));
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+
+  }
+
+  i {
+      color: #ffffff;
+  }
+}
+
+.navbar-gauche {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-droite {
+  display: flex;
+  gap: 30px;
+  margin-right: 15px;
+
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+html {
+  background-color: #F7FFF7;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #292F36;
+
+  h2 {
+      margin: 25px;
+      position: absolute;
+      right: 0;
+
+  }
+  .p_conf {
+    margin: 25px;
+    position: absolute;
+    left: 0;
+  }
+
+  a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+  }
+
+}
+
+/* Styles pour la FAQ */
+
+#main-faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.faq-section h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #444;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+.faq-item h2 {
+    font-size: 1.25em;
+    color: #222;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    padding: 10px 0;
+}
+.faq-item p {
+    display: none;
+    padding-top: 10px;
+    line-height: 1.6;
+}
+.faq-item.open p {
+    display: block;
+}
+.faq-item h2::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+.faq-item.open h2::after {
+    content: "-";
+    transform: rotate(45deg);
+}
+footer h2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+      button
+
+/* PAGES FONCTIONNALITES */
+.fonctionnalites-titre{
+    text-align: center;
+}
+
+.fonctionnalites-texte {
+    margin: 2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        margin: 30px;
+    }
+
+    h4{
+        margin-bottom: 15px;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 10px;
+    }
+}
+
+
+.fonctionnalites-texte p{
+
+    border: solid 1px black;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px black;
+
+}
+.fonctionnalites-conclusion{
+    color: green;
+    font-weight: bolder;
+}
+.fonctionnalites-dropdown{
+    list-style-type: none;
+    border: solid 1px rgb(97, 204, 203);
+    border-radius: 6px;
+    padding: 6px;
+    margin: 0;
+    display: none;
+    min-width: 150px;
+    top: 100;
+    background-color: white;
+    position: absolute;
+
+    hr{
+        border: 0.5px solid rgba(97, 204, 202, 0.329);
+    }
+
+}
+.nav-fonc:hover .fonctionnalites-dropdown{
+    display: block;
+}
+.fonctionnalites-dropdown li:hover{
+    text-decoration: none;
+    /* opacity: 70%; */
+    background-color: rgba(97, 204, 202, 0.562);
+    cursor: pointer;
+}
+
+/* PAGES FONCTIONNALITES end*/
+
+/* style css page profil */
+
+.connexion-form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.connexion-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120vh;
+    width: 100%;
+}
+
+.connexion-form {
+
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    padding: 70px;
+    height: 250px;
+    width: 250px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+button{
+    width: 150px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #292f36;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+   opacity: 70%;
+}
+
+.btn-connexion-espace{
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-connexion-espace a{
+  text-decoration: none;
+  color: white;
+}
+
+.btn-profil{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.btn-profil a{
+  text-decoration: none;
+  color: black;
+}
+.modification{
+    display: flex;
+    justify-content: space-around;
+}
+#profil{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profil-photo {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/ken-pdp.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+
+}
+
+#chatButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20%;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    border: 1px solid #ddd;
+    background-color: grey;
+    width: 300px;
+    max-height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+.chat-header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-body {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+/* style css page profil end */
+
+
+/* page inscription */
+.inscription-form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.inscription-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.inscription-form{
+  border: 2px solid black;
+  padding: 60px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+button{
+    width: 150px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #292f36;
+    border-radius: 8px;
+    display: flex;
+   justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    opacity: 70%;
+}
+
+/* page inscription end */
+
+/*
+    index
+*/
+
+.hero {
+
+
+    height: 1000px;
+    background-color: #ffffff;
+    background-image: url(../images/work.jpg);
+    background-size: cover;
+
+    h1{
+        color: white;
+        font-size: 60px;
+        text-shadow: 2px 2px 2px black;
+        text-align: center;
+        position: relative;
+        top: 500px;
+
+    }
+
+
+}
+
+
+.tuto-accueil {
+    background-color: #303d48;
+}
+
+.video {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*
+    index end
+*/
+
+/*
+    Politique de confidentialité start
+*/
+
+#politique{
+    display: flex;
+    flex-direction: column;
+}
+
+.head-politique{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 30px;
+
+    ul{
+        display: flex;
+        gap: 10px;
+        font-weight: bold;
+    }
+
+    li a{
+        color: rgb(0, 0, 0);
+    }
+}
+
+.head-politique a:hover{
+    color: rgb(78, 205, 196);
+}
+
+
+
+.body-politique{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 2%;
+    margin-top: 0px;
+
+    div{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border: 1px black solid;
+        border-radius: 6px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 8px black;
+    }
+}
+
+
+/*
+    Politique de confidentialité end
+*/
+
+@media screen and (max-width: 600px) {
+
+    /*
+        index start
+    */
+
+    .navbar-gauche {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 10px;
+      }
+
+      .navbar-droite {
+        display: flex;
+        gap: 15px;
+        margin-right: 15px;
+        font-size: 10px;
+
+      }
+
+    .hero {
+
+        height: 200px;
+
+        h1{
+            color: white;
+            font-size: 20px;
+            text-shadow: 2px 2px 2px black;
+            text-align: center;
+            position: relative;
+            top: 85px;
+
+        }
+
+
+    }
+
+    .video{
+        margin: 0px;
+    }
+
+    .video iframe{
+        height: 600px;
+
+    }
+
+
+    footer {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+        background-color: #292F36;
+
+        h2 {
+            margin: 25px;
+            position: absolute;
+            right: 0;
+            font-size: 12px;
+
+        }
+        .p_conf {
+          margin: 25px;
+          position: absolute;
+          left: 0;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+
+      }
+
+    /*
+        index end
+    */
+
+    /*
+        connexion start
+    */
+
+    .connexion-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 0 10px black;
+        padding: 5px;
+        width: 250px;
+        height: 350px;
+    }
+
+    .connexion-form input{
+        width: 150px;
+    }
+
+    .btn-connexion-espace{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .btn-connexion-espace button{
+        font-size: 12px;
+        width: 80px;
+    }
+
+    .connexion-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        height: 85vh;
+        width: 100%;
+    }
+
+    /*
+        connexion end
+    */
+
+    /*
+        politique de confidentialiité start
+    */
+
+
+    .head-politique{
+        font-size: 12px;
+    }
+
+    /*
+        politique de confidentialiité start
+    */
+
+    /*
+        Faq start
+    */
+
+    .faq-section {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        font-size: 12px;
+    }
+    /*
+        Faq end
+    */
+
+    /*
+        inscription start
+    */
+
+    .inscription-form {
+        font-size: 12px;
+        padding: 30px;
+        width: 200px;
+        height: auto;
+        margin: 0;
+    }
+
+    /*
+        inscription end
+    */
+
+    /*
+        profil start
+    */
+
+    .buttons-container button{
+
+        width: 80px;
+        font-size: 8px;
+
+
+    }
+
+    /*
+        profil start
+    */
+
+}

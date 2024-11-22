@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(0.25turn, rgb(78, 205, 196), rgb(41, 47, 54));
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+  }
+
+  i {
+      color: #ffffff;
+  }
+}
+
+.navbar-gauche {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-droite {
+  display: flex;
+  gap: 30px;
+  margin-right: 25px;
+
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+html {
+  background-color: #F7FFF7;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #292F36;
+
+  h2 {
+      margin: 25px;
+      position: absolute;
+      right: 0;
+
+  }
+  
+  .p_conf {
+    margin: 25px;
+    position: absolute;
+    left: 0;
+  }
+
+  a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+  }
+
+}
+.connexion-form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.connexion-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.connexion-form {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: grey;
+    box-shadow: 0 0 10px black;
+    padding: 50px;
+    height: 250px;
+    margin: 50px;
+    width: 250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+button {
+  width: 150px;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #292f36;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  border: none
+}
+
+button:hover {
+    opacity: 70%;
+}
+
+.modification{
+    display: flex;
+    justify-content: space-around;
+
+}
+.notification-icon{
+    position: relative;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.notification-badge{
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+#profil{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px;
+    margin: 150px;
+    flex-direction: row;
+    margin: 20px;
+
+}
+
+
+
+.box {
+    border: 1px solid black;
+    margin: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+}
+
+.box:nth-child(1) {
+    background-color: white;
+
+}
+
+.box:nth-child(2) {
+    background-color: white;
+}
+
+.box:nth-child(3) {
+    background-color: white;
+}
+
+.box:nth-child(4) {
+    background-color: white;
+}
+
+.box:nth-child(5) {
+    background-color: white;
+}
+.btn.box{
+    display: flex;
+    align-items: space-between;
+    flex-direction: row;
+}
+.container{
+    display: flex;
+   align-content: space-around;
+}
+.box {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   }
+.button-group {
+    margin: 20px;
+}
+
+@media screen and (max-width: 600px){
+  .navbar-gauche {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 10px;
+  }
+
+  .navbar-droite {
+    display: flex;
+    gap: 15px;
+    margin-right: 15px;
+    font-size: 10px;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #292F36;
+
+    h2 {
+        margin: 25px;
+        position: absolute;
+        right: 0;
+        font-size: 12px;
+
+    }
+    .p_conf {
+      margin: 25px;
+      position: absolute;
+      left: 0;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+  }
+
+}
+@media screen and (max-width: 420px){
+  .compte-header-title{
+    font-size: 20px;
+  }
+
+  nav img{
+    display: none;
+  }
+
+  nav i{
+    font-size: 15px !important;
+  }
+
+  nav{
+    font-size: 10px !important;
+  }
+
+  .navbar{
+    margin-top: 15px;
+  }
+
+  .navbar-droite{
+    margin-top: 15px;
+  }
+
+  button{
+    margin-top: 10px;
+  }
+}
