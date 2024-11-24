@@ -58,6 +58,65 @@ footer {
         color: rgb(255, 255, 255);
     }
 }
+
+/*
+Notification
+*/
+#Notification-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#Notification{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgb(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    
+}
+.hidden{
+    visibility: hidden;
+}
+
+.show {
+    visibility: unset;
+}
+.head-notif{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 300px;
+    h1{
+        margin: 5px;
+    }
+
+}
+.body-notif{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    gap: 10px;
+
+    .notif{
+        height: fit-content;
+        padding: 15px;
+        border: grey 1px solid;
+        border-radius: 5px;
+    }
+
+}
+/*
+Notification end
+*/
+
 /*
     dashboard debut
 */
@@ -193,6 +252,16 @@ footer {
 .haut-cal button {
     border-radius: 8px;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+
+    }
 }
 .bas-cal {
     display: flex;
@@ -415,6 +484,34 @@ body {
     font-size: 3rem;
     font-weight: 100;
 }
+
+.dropdown-content {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
 /* calendrier fin*/
 /*
     dashboard end
