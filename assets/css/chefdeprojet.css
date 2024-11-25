@@ -274,6 +274,11 @@ Notification end
     border-radius: 8px;
     border: none;
 }
+
+.dropdown-btn-filtre button {
+    border-radius: 8px;
+    border: none;
+}
 .day-btn {
     display: flex;
     gap: 20px;
@@ -437,6 +442,9 @@ Notification end
 .time {
     display: flex;
     justify-content: space-between;
+    span{
+        font-size: 13px;
+    }
 }
 .time-data {
     display: flex;
@@ -486,16 +494,50 @@ body {
 }
 
 .dropdown-content {
-    display: none; /* Initially hidden */
+    display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    li:hover{
+        background-color: grey;
+        opacity: 50%;
+    }
+}
+.dropdown-content-filtre{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content.show {
     display: block;
+}
+
+.dropdown-content-filtre.show {
+    display: block;
+}
+
+.dropdown-content-filtre ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li{
+        padding: 10px;
+        cursor: pointer;
+
+    }
+
+    li:hover{
+        background-color: grey;
+        opacity: 50%;
+    }
 }
 
 .dropdown-content ul {
