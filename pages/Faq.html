@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Quicktask</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const faqItems = document.querySelectorAll(".faq-item h2");
+            faqItems.forEach(item => {
+                item.addEventListener("click", function() {
+                    const parent = this.parentElement;
+                    parent.classList.toggle("open");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- partie gauche-->
+            <div class="navbar-gauche">
+                <a href="index.html"><img href="index.html" src="../assets/images/logo.png" alt="logo" style="height: 80px;"></a>
+                <ul  class="navbar" style="list-style-type: none;">
+                    <li class="nav-fonc" ><a href="fonctionnalite.html">Fonctionnalités</a></li>
+                </ul>
+            </div>
+            <!-- partie droite-->
+            <ul  class="navbar-droite" style="list-style-type: none;">
+                <li><a href="connexion.html">Se connecter</a></li>
+                <li><a href="inscription.html">S'inscrire</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-faq">
+        <section class="faq-section">
+            <h1>Foire Aux Questions (FAQ)</h1>
+            <div class="faq-item">
+                <h2>Qu'est-ce que Quicktask ?</h2>
+                <p>Quicktask est une application de gestion de tâches conçue pour optimiser la productivité. Elle vous permet de suivre vos projets, organiser vos tâches et travailler en équipe de manière fluide.</p>
+            </div>
+            <div class="faq-item">
+                <h2>Comment créer un compte ?</h2>
+                <p>Pour créer un compte, cliquez sur "S'inscrire" en haut à droite, remplissez vos informations et suivez les instructions pour compléter l'inscription.</p>
+            </div>
+            <div class="faq-item">
+                <h2>Est-ce que Quicktask est gratuit ?</h2>
+                <p>Oui, Quicktask propose une version gratuite avec des fonctionnalités de base. Des options premium sont disponibles pour ceux qui ont besoin de fonctionnalités avancées.</p>
+            </div>
+            <div class="faq-item">
+                <h2>Comment contacter le support client ?</h2>
+                <p>Vous pouvez nous contacter via notre page de contact ou envoyer un e-mail à support@quicktask.com. Notre équipe est là pour vous aider.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2 class="p_conf"><a href="politique_de_conf.html">Politique de Confidentialité</a></h2>
+        <h2><a href="#">Faq</a></h2>
+    </footer>
+</body>
+</html>

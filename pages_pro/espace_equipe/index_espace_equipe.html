@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace équipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../espace_equipe/tache_espace_equipe.html">
+    <link rel="shortcut icon" href="../../assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../espace_equipe/espace_equipe_tache.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+            <!-- partie gauche-->
+              <div class="navbar-gauche">
+                <a href="../espace_equipe/index_espace_equipe.html"><img src="../../assets/images/logo.png" alt="" style="height: 80px;"></a>
+                  <ul  class="navbar" style="list-style-type: none;">
+                      <li class="nav-fonc"><a href="../espace_equipe/projet_espace_equipe.html">Projet</a></li>
+                      <li class="nav-fonc"><a href="../espace_equipe/tache_espace_equipe.html">Taches</a></li>
+                  </ul>
+              </div>
+              <!-- partie droite-->
+              <ul  class="navbar-droite" style="list-style-type: none;">
+                <li><a href="#"><i class="bi bi-bell" style="font-size: 25px;"></i></a></li>
+                <li><a href="../../pages/profil.html"><i class="bi bi-person-circle" style="font-size: 25px;"></i></a></li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="maim-tache-eqp">
+
+
+
+      <div class="tache-container">
+
+        <div class="tache-status">
+
+          <div class="ligne-container">
+
+            <div class="indicateur-status">
+              <span><span class="dot vert"></span>En cours</span>
+              <span><span class="dot orange"></span>En retard</span>
+              <span><span class="dot bleu"></span>Terminé</span>
+            </div>
+          </div>
+
+          <div class="graph-card-container">
+            <div class="card-graph">
+              <h2>STATUT DU PROJET</h2>
+              <hr>
+              <div class="card-graph-body">
+                  <!-- graph-->
+                <div id="chart"></div>
+                  <!-- graph end-->
+                <div class="texte-graph">
+                  <div><span class="dot vert"></span>
+                    <p>Tâches en cours</p>
+                  </div>
+                  <div><span class="dot orange"></span>
+                    <p>Tâches en retard</p>
+                  </div>
+                  <div><span class="dot bleu"></span>
+                    <p>Tâches en terminés</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div><button><a style="color: white;" href="creation_tache.html">Créer une tâche</a></button></div>
+        </div>
+
+
+
+        <div class="tache-recente">
+          <h2>Tâches récentes</h2>
+
+          <div class="card-compte-admin">
+            <div class="card-column">
+              <div class="ligne">
+                <span><span class="dot vert"></span><h3>Nom tâche</h3></span>
+                <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+              </div>
+              <div class="ligne">
+                <p>Membre 1</p>
+                <p><i class="bi bi-watch"></i> 1 heure</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-compte-admin">
+            <div class="card-column">
+              <div class="ligne">
+                <span><span class="dot bleu"></span><h3>Nom tâche</h3></span>
+                <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+              </div>
+              <div class="ligne">
+                <p>Membre 1</p>
+                <p><i class="bi bi-watch"></i> 1 heure</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card-compte-admin">
+            <div class="card-column">
+              <div class="ligne">
+                <span><span class="dot orange"></span><h3>Nom tâche</h3></span>
+                <button class="dot-btn"><i class="bi bi-three-dots"></i></button>
+              </div>
+              <div class="ligne">
+                <p>Membre 1</p>
+                <p><i class="bi bi-watch"></i> 1 heure</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <h2 class="p_conf"><a href="../../pages/politique_de_conf.html">Politique de Confidentialité</a></h2>
+      <h2><a href="../../pages/Faq.html">Faq</a></h2>
+  </footer>
+</body>
+</html>
