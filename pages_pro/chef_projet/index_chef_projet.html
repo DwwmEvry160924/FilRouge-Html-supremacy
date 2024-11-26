@@ -28,12 +28,39 @@
             </div>
             <!-- partie droite-->
             <ul class="navbar-droite" style="list-style-type: none;">
-                <li><a href=""><i class="bi bi-bell" style="font-size: 25px;"></i></a></li>
+                <li><button type="button" onclick="popupNotif()" style="background-color: unset; border: unset; cursor: pointer;"><i  class="bi bi-bell" style="font-size: 25px;"></i></button></li>
                 <li><a href="../../pages/profil.html"><i class="bi bi-person-circle" style="font-size: 25px;"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section id="Notification-container">
+            <div id="Notification" class="hidden" >
+                <div class="head-notif">
+                    <div><h1>Notification</h1></div>
+                    
+                </div>
+                <div class="body-notif">
+                    <div class="notif">
+                        <p>Une nouvelle tache est terminé</p>
+                    </div>
+                    <div class="notif">
+                        <p>Une nouvelle tache est terminé</p>
+                    </div>            <div class="notif">
+                        <p>Une nouvelle tache est terminé</p>
+                    </div>            <div class="notif">
+                        <p>Une nouvelle tache est terminé</p>
+                    </div>            <div class="notif">
+                        <p>Une nouvelle tache est terminé</p>
+                    </div>            <div class="notif">
+                        <p>Une nouvelle tache est terminé</p>
+                    </div>
+                </div>
+        
+        
+            </div>
+        </section>
+
         <section class="card-db-container">
             <div class="data-card-container">
                 <div class="card-data">
@@ -130,22 +157,20 @@
                 <div class="head-calendar">
                     <div class="haut-cal">
                         <h2>Calendrier</h2>
-                        <button style="height: 40px;"><i class="bi bi-plus-circle"></i>Ajouter</button>
+                        <button style="height: 40px;"><a style="color: black; text-decoration: none; font-style: none;" href="../admin/formulaire_creation.html"><i class="bi bi-plus-circle"></i>Ajouter</a></button>
                     </div>
                     <hr style="margin: 50px;">
                     <div class="bas-cal">
                         <div class="day-btn">
                             <div class="dropdown-btn">
-                                <button style="height: 40px;"><i class="bi bi-calendar"></i>11sep<i
-                                        class="bi bi-chevron-down"></i></button>
-                            </div>
-                            <div class="day-navbar">
-                                <ul style="list-style-type: none;">
-                                    <li>jour</li>
-                                    <li>3jours</li>
-                                    <li>Sem</li>
-                                    <li>Mois</li>
-                                </ul>
+                                <button style="height: 40px;"><i class="bi bi-calendar"></i>11sep<i class="bi bi-chevron-down"></i></button>
+                                <div class="dropdown-content">
+                                    <ul>
+                                        <li>Jour</li>
+                                        <li>3 Jours</li>
+                                        <li>Semaine</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="gauche-btn">
@@ -154,7 +179,17 @@
                                 <span><span class="dot jaune"></span>En retard</span>
                                 <span><span class="dot bleu"></span>Terminés</span>
                             </div>
-                            <button style="height: 40px;"><i class="bi bi-funnel"></i>Filtrer</button>
+                            <div class="dropdown-btn-filtre">
+                                <button style="height: 40px;"><i class="bi bi-funnel"></i>Filtrer<i class="bi bi-chevron-down"></i></button>
+                                <div class="dropdown-content-filtre">
+                                    <ul>
+                                        <li>en cours</li>
+                                        <li>terminés</li>
+                                        <li>en retard</li>
+                                        <li>tout</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -326,6 +361,6 @@
       <h2 class="p_conf"><a href="../../pages/politique_de_conf.html">Politique de Confidentialité</a></h2>
       <h2><a href="../../pages/Faq.html">Faq</a></h2>
     </footer>
-
+    <script src="../../assets/js/script.js" ></script>
 </body>
 </html>

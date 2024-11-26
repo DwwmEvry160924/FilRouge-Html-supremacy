@@ -212,9 +212,10 @@ h2{
 }
 
 .gestion-compte-container{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -229,9 +230,11 @@ h2{
   box-shadow: 0 4px 8px black;
   background-color: white;
   cursor: pointer;
+  transition: transform 0.2s, ease;
 }
 
 .card-compte-admin:hover{
+  transform: scale(1.15);
   opacity: 70%;
 }
 
@@ -306,6 +309,97 @@ h2{
   background-color: blue;
 }
 
+/* POP UP */
+
+.pop {
+  display: none;
+  position: fixed;
+  /* z-index: 1; */
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-content {
+  background: white;
+  /* margin: 5% auto; */
+  padding: 20px;
+  border-radius: 15px;
+  /* max-width: 600px;
+  width: 90%;
+  border: 1px solid #888; */
+  box-shadow: 0 4px 8px black;
+  /* position: relative; */
+  /* width: 80%; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.project-details p {
+  display: flex;
+  justify-content: start;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* padding: 10px; */
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  opacity: 70%;
+}
+/* voir */
+
+.pop-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between
+}
+
+.pop-buttons .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.pop-buttons .btn:hover {
+  opacity: 70%;
+}
+
+#edit-btn {
+  background-color: #292f36;
+  color: white;
+}
+
+#delee-btn {
+  background-color: red;
+  color: white;
+}
+/* fin voir */
+
+@media screen and (max-width: 768px){
+  .pop-content {
+    padding: 95%;
+  }
+}
+/* fin pop up */
+
 @media screen and (max-width: 1500px){
   .compte-header{
     width: auto;
@@ -373,43 +467,51 @@ h2{
     border-radius: 50%;
     margin-right: 5px;
   }
+}
+
+@media screen and (max-width: 805px){
   .gestion-compte-container{
-    display: flex;
-    align-items: center;
-    /* flex-direction: column; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* display: flex;
+    align-items: center; */
   }
-  .compte-header{
+
+  main{
+    font-size: 15px;
+  }
+  /* .compte-header{
     width: 100%;
   }
   .card-compte-admin{
     width: 100%;
     margin: 5px;
-    padding: 5px
-  }
+    padding: 5px;
+  } */
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 422px){
   *{
     padding: 0;
   }
-  .ligne{
+  /* .ligne{
     display: block
   }
   .compte-header{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  }
+  } */
   .card-compte-admin{
-    border: 1px solid black;
+    padding: 10px;
+    /* border: 1px solid black;
     border-radius: 5px;
     padding: 20px;
-    /* margin: 20px; */
+    margin: 20px;
     width: 300px;
     height: 100px;
     box-shadow: 0 4px 8px black;
     background-color: white;
-    cursor: pointer;
+    cursor: pointer; */
   }
   main{
     font-size: 20px;
@@ -426,15 +528,9 @@ h2{
     border-radius: 50%;
     margin-right: 5px;
   }
-  .card-column{
-    display: block;
-    flex-direction: unset;
-    gap: 0;
-  }
   .gestion-compte-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
   }
 
   nav i{
@@ -538,6 +634,16 @@ h2{
     gap: 50px;
     width: 400px;
     box-shadow: 0 4px 8px black;
+  }
+
+  .indicateur-status{
+    display: grid;
+    gap: 5px;
+  }
+
+  .gestion-compte-container{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
   }
 
 }
