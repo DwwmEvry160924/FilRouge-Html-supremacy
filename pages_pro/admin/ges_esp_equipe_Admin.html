@@ -40,50 +40,75 @@
         <h2><a href="../../pages/fonctionnalite.html">Fonctionnalités</a></h2>
 
         <div class="button">
-            <button class="btn btn-primary btn-lg" type="button">Ajouter</button>
+            <button id="btn-ajouter" class="btn btn-primary btn-lg" type="button">Ajouter</button>
         </div>
 
         <div id="container">
 
 
-            <div class="box">"Planification intuitive"<p><br>Organisez vos tâches, deadlines et ressources
-                dans une interface visuelle facilitant la planification de chaque étape du projet.</p>
-                <div class="button-group"> <button type="button" class="btn btn-primary">Modifier</button>
-                    <button type="button" class="btn btn-secondary">Supprimer</button>
+            <div class="box">
+                <h3>"Planification intuitive"</h3>
+                <p><br>Organisez vos tâches, deadlines et ressources dans une interface visuelle facilitant la planification de chaque étape du projet.</p>
+                <div class="button-group">
+                  <button type="button" class="btn btn-primary btn-modifier">Modifier</button>
+                  <button type="button" class="btn btn-secondary btn-supprimer">Supprimer</button>
                 </div>
             </div>
 
-            <div class="box">"Suivi en temps réel"<p><br>Visualisez l’avancement de chaque tâche avec des outils
-                 de suivi en temps réel, qui mettent en évidence les progrès et les blocages.</p>
-            <div class="button-group"> <button type="button" class="btn btn-primary">Modifier</button>
-                <button type="button" class="btn btn-secondary">Supprimer</button>
-            </div>
-        </div>
-
-            <div class="box">"Tableaux de bord personnalisables"<p><br>Créez des tableaux de bord selon vos préférences,
-                pour obtenir une vue d’ensemble de chaque projet, indicateur clé et échéancier.</p>
-            <div class="button-group"> <button type="button" class="btn btn-primary">Modifier</button>
-                <button type="button" class="btn btn-secondary">Supprimer</button>
-            </div>
-        </div>
-
-            <div class="box">"Collaboration simplifiée"<p><br>Intégrez des fonctionnalités de messagerie et de partage de fichiers,
-                permettant à chaque membre de l’équipe de travailler ensemble et de rester aligné.</p>
-            <div class="button-group"> <button type="button" class="btn btn-primary">Modifier</button>
-                <button type="button" class="btn btn-secondary">Supprimer</button>
-            </div>
-        </div>
-
-            <div class="box">"Gestion des ressources"<p><br>Allouez les ressources adéquates aux tâches, suivez leur disponibilité,
-                et ajustez les affectations selon les besoins.</p>
-            <div class="button-group"> <button type="button" class="btn btn-primary">Modifier</button>
-                <button type="button" class="btn btn-secondary">Supprimer</button>
+            <div class="box">
+              <h3>"Suivi en temps réel"</h3>
+              <p><br>Visualisez l’avancement de chaque tâche avec des outils de suivi en temps réel, qui mettent en évidence les progrès et les blocages.</p>
+              <div class="button-group">
+                <button type="button" class="btn btn-primary btn-modifier">Modifier</button>
+                <button type="button" class="btn btn-secondary btn-supprimer">Supprimer</button>
+              </div>
             </div>
 
+            <div class="box">
+              <h3>"Tableaux de bord personnalisables"</h3>
+              <p><br>Créez des tableaux de bord selon vos préférences, pour obtenir une vue d’ensemble de chaque projet, indicateur clé et échéancier.</p>
+              <div class="button-group">
+                <button type="button" class="btn btn-primary btn-modifier">Modifier</button>
+                <button type="button" class="btn btn-secondary btn-supprimer">Supprimer</button>
+              </div>
+            </div>
+
+            <div class="box">
+              <h3>"Collaboration simplifiée"</h3>
+              <p><br>Intégrez des fonctionnalités de messagerie et de partage de fichiers, permettant à chaque membre de l’équipe de travailler ensemble et de rester aligné.</p>
+              <div class="button-group">
+                <button type="button" class="btn btn-primary btn-modifier">Modifier</button>
+                <button type="button" class="btn btn-secondary btn-supprimer">Supprimer</button>
+              </div>
+            </div>
+
+            <div class="box">
+              <h3>"Gestion des ressources"</h3>
+              <p><br>Allouez les ressources adéquates aux tâches, suivez leur disponibilité, et ajustez les affectations selon les besoins.</p>
+              <div class="button-group">
+                <button type="button" class="btn btn-primary btn-modifier">Modifier</button>
+                <button type="button" class="btn btn-secondary btn-supprimer">Supprimer</button>
+              </div>
+            </div>
+
         </div>
-
-
     </main>
+
+    <!-- pop up -->
+     <div id="popup" class="popup" style="display: none;">
+      <div class="popup-content">
+        <span id="popup-close" class="close">&times;</span>
+        <h3 id="popup-title">Ajouter une fonctionnalité</h3>
+        <form id="popup-form">
+          <label for="popup-nom">Nom :</label>
+          <input type="text" id="popup-nom" placeholder="Nom de la fonctionnalité" required>
+          <label for="popup-description">Description :</label>
+          <textarea id="popup-description" placeholder="Description de la fonctionnalité" required></textarea>
+          <button type="submit" class="btn btn-primary">Enregistrer</button>
+        </form>
+      </div>
+     </div>
+
     <footer>
       <h2 class="p_conf"><a href="../../pages/politique_de_conf.html">Politique de Confidentialité</a></h2>
       <h2><a href="../../pages/Faq.html">Faq</a></h2>
@@ -91,6 +116,8 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+</script>
+<script src="../../assets/js/dossier_js_admin/fonctionnalite_admin.js"></script>
 
 </html>
