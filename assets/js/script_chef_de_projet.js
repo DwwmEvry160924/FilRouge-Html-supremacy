@@ -16,7 +16,7 @@ let termine = document.querySelectorAll('.termines')
 let enRetard = document.querySelectorAll('.en-retard')
 let projet = document.querySelectorAll('.event')
 
-let card = document.querySelectorAll('.event')
+// let card = document.querySelectorAll('.event')
 
 dropdownButton.addEventListener('click', () => {
   dropdownContent.classList.toggle('show');
@@ -102,6 +102,5 @@ console.log(enRetard)
 console.log(termine)
 
 console.log(days)
-
 
 
