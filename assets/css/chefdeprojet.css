@@ -334,7 +334,7 @@ Notification end
     border-radius: 50%;
     margin-right: 10px;
 }
-.vert {
+.enCours {
     background-color: green;
 }
 .jaune {
@@ -365,45 +365,73 @@ Notification end
     display: grid;
     grid-template-rows: repeat(var(--numHours), var(--timeHeight));
 }
-.days {
+
+/* .days {
     display: grid;
     grid-column: 2;
     gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-.events {
+} */
+/* .events {
     display: grid;
     grid-template-rows: repeat(var(--numHours), var(--timeHeight));
     border-radius: 5px;
     background: var(--calBgColor);
-}
+} */
 /*Place sur la Timeline*/
-.start-10 {
+.start-8h{
+    grid-row-start: 1;
+}
+
+.start-9h {
     grid-row-start: 2;
 }
-.start-12 {
+.start-10h {
+    grid-row-start: 3;
+}
+
+.start-11h {
     grid-row-start: 4;
 }
-.start-1 {
+.start-12h {
     grid-row-start: 5;
 }
-.start-2 {
+.start-13h {
     grid-row-start: 6;
 }
-.end-12 {
+.start-14h{
+    grid-row-start: 7;
+}
+.start-15h{
+    grid-row-start: 8;
+}
+.start-16h{
+    grid-row-start: 9;
+}
+
+.end-9h{
+    grid-row-end: 2;
+}
+.end-10h{
+    grid-row-end: 3;
+}
+.end-11h {
     grid-row-end: 4;
 }
-.end-1 {
+.end-12h {
     grid-row-end: 5;
 }
-.end-3 {
+.end-14h {
     grid-row-end: 7;
 }
-.end-4 {
+.end-15h {
     grid-row-end: 8;
 }
-.end-5 {
+.end-16h {
     grid-row-end: 9;
+}
+.end-17h {
+    grid-row-end: 10;
 }
 /*Evenement*/
 .title {
