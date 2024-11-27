@@ -673,8 +673,8 @@ h2{
   }
 }
 
-/* index admin */
 
+<<<<<<< HEAD:assets/css/styles_admin.css
 @media screen and (max-width: 900px){
   .index-container{
     display: block;
@@ -789,3 +789,5 @@ h2{
     font-size: 20px;
   }
 }
+=======
+>>>>>>> 8bc5edf (finition responsive des pages[SD]):admin/styles_admin.css
