@@ -126,7 +126,7 @@ footer {
 }
 
 button {
-  width: 150px;
+  /* width: 150px; */
   padding: 5px;
   color: #ffffff;
   background-color: #292f36;
@@ -238,6 +238,24 @@ h2{
   opacity: 70%;
 }
 
+.card-commentaire-admin{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  height: 100px;
+  box-shadow: 0 4px 8px black;
+  background-color: white;
+  cursor: pointer;
+  transition: transform 0.2s, ease;
+}
+
+.card-commentaire-admin:hover{
+  transform: scale(1.15);
+  opacity: 70%;
+}
+
 .card-column{
   display: flex;
   flex-direction: column;
@@ -285,6 +303,10 @@ h2{
   align-items: center;
 }
 
+.card-commentaire-admin span{
+  display: flex;
+  align-items: center;
+}
 .dot-btn{
   width: 40px;
   height: 40px;
@@ -309,35 +331,50 @@ h2{
   background-color: blue;
 }
 
-/* POP UP */
+/* POP UP projets et commentaire */
 
 .pop {
   display: none;
   position: fixed;
-  /* z-index: 1; */
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
+  background-color: black;
   background-color: rgba(0,0,0,0.4);
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
 }
 
 .pop-content {
   background: white;
-  /* margin: 5% auto; */
   padding: 20px;
   border-radius: 15px;
-  /* max-width: 600px;
-  width: 90%;
-  border: 1px solid #888; */
   box-shadow: 0 4px 8px black;
-  /* position: relative; */
-  /* width: 80%; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.popup-content {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px black;
+  max-width: 600px;
+  margin: auto;
+}
+
+.pop-content-commentaire {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px black;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -347,6 +384,13 @@ h2{
 .project-details p {
   display: flex;
   justify-content: start;
+  padding: 3px;
+}
+
+.commentaire-details p {
+  display: flex;
+  justify-content: start;
+  padding: 3px;
 }
 
 .close-btn {
@@ -355,7 +399,6 @@ h2{
   right: 15px;
   font-size: 1.5rem;
   font-weight: bold;
-  /* padding: 10px; */
   cursor: pointer;
 }
 
@@ -385,13 +428,35 @@ h2{
 #edit-btn {
   background-color: #292f36;
   color: white;
+  width: auto;
+  gap: 10px;
 }
 
 #delee-btn {
   background-color: red;
   color: white;
+  width: auto;
 }
 /* fin voir */
+/* POP UP Compte */
+
+.pop-content-compte {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.compte-details p {
+  display: flex;
+  justify-content: start;
+  padding: 3px;
+}
+
+/* Fin POP UP comptes  */
 
 @media screen and (max-width: 768px){
   .pop-content {
@@ -405,6 +470,12 @@ h2{
     width: auto;
   }
   .card-compte-admin{
+    width: auto;
+    margin: 5px;
+    padding: 5px
+  }
+
+  .card-commentaire-admin{
     width: auto;
     margin: 5px;
     padding: 5px
@@ -486,6 +557,11 @@ h2{
     width: 100%;
     margin: 5px;
     padding: 5px;
+  }
+  .card-commentaire-admin{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
   } */
 }
 
@@ -502,6 +578,19 @@ h2{
     margin-bottom: 20px;
   } */
   .card-compte-admin{
+    padding: 10px;
+    /* border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 100px;
+    box-shadow: 0 4px 8px black;
+    background-color: white;
+    cursor: pointer; */
+  }
+
+  .card-commentaire-admin{
     padding: 10px;
     /* border: 1px solid black;
     border-radius: 5px;
@@ -550,6 +639,10 @@ h2{
     width: auto;
   }
 
+  .card-commentaire-admin{
+    width: auto;
+  }
+
   /* .nav{
     gap: 5px;
   } */
@@ -561,6 +654,22 @@ h2{
 
   button{
     width: auto;
+  }
+
+  .pop-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-details h2 {
+    font-size: 15px;
+  }
+  .project-details p {
+    font-size: 10px;
+  }
+
+  .project-details .btn {
+    font-size: 10px;
+    margin-bottom: 4px;
   }
 }
 
