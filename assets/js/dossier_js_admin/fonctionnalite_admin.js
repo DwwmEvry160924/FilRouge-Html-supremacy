@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const popupClose = document.querySelector("#popup-close");
   const btnAjouter = document.querySelector("#btn-ajouter");
 
-  let mode = ""; // Mode du popup: "ajouter" ou "modifier"
+  let mode = ""; // ajouter ou modifier
   let currentBox = null; // Pour stocker l'élément en cours de modification
 
-  // Ouvrir le popup
+  // POP UP
   function openPopup(modePopup, box = null) {
     popup.style.display = "flex";
 
@@ -24,24 +24,20 @@ document.addEventListener("DOMContentLoaded", () => {
       popupDescription.value = "";
     } else if (mode === "modifier") {
       popupTitle.textContent = "Modifier une fonctionnalité";
-      popupNom.value = box.querySelector("h3").textContent.replace(/"/g, ""); // Supprime les guillemets
+      popupNom.value = box.querySelector("h3").textContent.replace(/"/g, ""); // Supprimer les guillemets
       popupDescription.value = box.querySelector("p").textContent;
     }
-
   }
 
-  // Fermer le popup
   function closePopup() {
-      popup.style.display = "none";
+    popup.style.display = "none";
   }
 
-  // Ajouter une fonctionnalité
   btnAjouter.addEventListener("click", () => openPopup("ajouter"));
 
-  // Fermer le popup en cliquant sur la croix
   popupClose.addEventListener("click", closePopup);
 
-  // Gestion du formulaire (ajout/modification)
+  // Ajouter ou modifier une fonctionnalité
   popupForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -61,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
 
       container.appendChild(box);
-      addEventListeners(box); // Ajoute des événements au nouvel élément
+      addEventListeners(box);
     } else if (mode === "modifier" && currentBox) {
       currentBox.querySelector("h3").textContent = `"${nom}"`;
       currentBox.querySelector("p").textContent = description;
@@ -70,7 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
     closePopup();
   });
 
-  // Ajouter des écouteurs d'événements pour chaque box
   function addEventListeners(box) {
     const btnModifier = box.querySelector(".btn-modifier");
     const btnSupprimer = box.querySelector(".btn-supprimer");
@@ -83,6 +78,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Initialiser les écouteurs sur les fonctionnalités existantes
   document.querySelectorAll(".box").forEach(addEventListeners);
 });

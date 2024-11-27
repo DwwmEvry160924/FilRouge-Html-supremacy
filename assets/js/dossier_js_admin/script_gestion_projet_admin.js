@@ -3,7 +3,8 @@ const projects = JSON.parse(localStorage.getItem('projects')) || [];
 // POP UP
 const popupProjet = document.querySelector('#popup-projet');
 const projectDetailsContainer = document.querySelector('.project-details');
-const closeBtn = document.querySelector('.close-btn');
+const closeBtn = document.querySelector('#popup-close');
+
 
 // effacer les projets existants
 gestionCompteContainer.innerHTML = '';
@@ -28,10 +29,12 @@ projects.forEach((project, index) => {
 
   // POP UP
   card.addEventListener('click', () => {
-
     popupProjet.style.display = 'flex';
 
     projectDetailsContainer.innerHTML = `
+      <div class="ligne">
+        <span id="popup-close" class="close-btn">&times;</span>
+      </div>
       <h2><strong>Nom :</strong> <span id="project-name">${project.name}</span></h2>
       <p><strong>Description :</strong> <span id="project-description">${project.description}</span></p>
       <p><strong>Chef de projet: </strong> <span id="project-chef">${project.chef}</span></p>
@@ -42,6 +45,32 @@ projects.forEach((project, index) => {
         <button id="delete-btn" class="btn">Supprimer</button>
       </div>
     `;
+    const closeBtn = document.querySelector('#popup-close');
+    closeBtn.addEventListener('click', () => {
+      popupProjet.style.display = 'none';
+    });
+
+    // REVOIR LE CODE ICI POUR LE BOUTON FERMETURE DU POP UP!
+    // const closeBtn = document.querySelector('#popup-close');
+    // console.log(closeBtn); // Vérifie si l'élément est bien trouvé
+
+    // if (closeBtn) {
+    //   closeBtn.addEventListener('click', () => {
+    //     popupProjet.style.display = 'none';
+    //   });
+    // } else {
+    //   console.error('Le bouton de fermeture #popup-close est introuvable !');
+    // }
+
+    document.querySelector('#test-close-btn').addEventListener('click', () => {
+      popupProjet.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === popupProjet) {
+        popupProjet.style.display = 'none';
+      }
+    });
 
     // button supprimer
     document.getElementById('delete-btn').addEventListener('click', () => {
@@ -56,14 +85,11 @@ projects.forEach((project, index) => {
     editBtn.addEventListener('click', () => {
       enableEditMode(project, index, editBtn);
     });
-    // document.getElementById('edit-btn').addEventListener('click', () => {
-    //   alert(`Modifier le projet : ${project.name}`);
-    // });
   });
 
   gestionCompteContainer.appendChild(card);
 });
-// });
+
 document.addEventListener('DOMContentLoaded', () => {
   const popupProjet = document.querySelector('#popup-projet');
   console.log(popupProjet);
@@ -71,18 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 console.log(document.querySelector('#popup-projet'));
 
-// POP UP
-closeBtn.addEventListener('click', () => {
-  popupProjet.style.display = 'none';
-});
+// window.addEventListener('click', (e) => {
+//   if (e.target === popupProjet) {
+//     popupProjet.style.display = 'none';
+//   }
+// });
 
-window.addEventListener('click', (e) => {
-  if (e.target === popupProjet) {
-    popupProjet.style.display = 'none';
-  }
-});
-
-// fonction modifier je le fait en passant en mode édition
+// fonction modifier je le fait en passant en mode édition (plus simple)
 
 function enableEditMode(project, index, editBtn) {
   const nameElement = document.getElementById('project-name');
@@ -134,6 +155,14 @@ function saveChanges(index) {
     deadline: updatedDeadline,
   };
 
+  // test problème d'affichage de modification revoir le code ici!
+  console.log('Valeurs mises à jour:', {
+    name: updatedName,
+    description: updatedDescription,
+    chef: updatedChef,
+    deadline: updatedDeadline,
+  });
+
   localStorage.setItem('projects', JSON.stringify(projects));
 
   // alerte pour confirmer la modification et pop up fermé
@@ -142,4 +171,3 @@ function saveChanges(index) {
   window.location.reload();
 }
 // Fin partie gestion projet admin
-
