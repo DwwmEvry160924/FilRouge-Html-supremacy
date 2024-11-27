@@ -36,7 +36,7 @@
             <form id="formNewProjet" class="row mt-5">
                 <div class="col-md-6 mb-3">
                     <label for="projectName" class="form-label">Nom du projet</label>
-                    <input type="text" class="form-control" id="projectName" required>
+                    <input pattern="[^\s]+" type="text" class="form-control" id="projectName" required>
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="projectDescription" class="form-label">Description du projet</label>
@@ -44,9 +44,9 @@
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="projectDebut" class="form-label">Date de debut</label>
-                    <input type="time" class="form-control" id="projectDebut" required>
+                    <input type="time" min="08:00" max="17:00"  class="form-control" id="projectDebut" required>
                     <label for="projectDeadline" class="form-label">Date limite</label>
-                    <input type="datetime-local" class="form-control" id="projectDeadline" required>
+                    <input type="date"  class="form-control" id="projectDeadline" required>
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="projectChef" class="form-label">Chef de projet</label>

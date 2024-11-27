@@ -95,12 +95,12 @@ dropdownContentFiltre.addEventListener("click", (e) => {
     }
 });
 
-console.log(projet);
-console.log(enCours);
-console.log(enRetard);
-console.log(termine);
+// console.log(projet);
+// console.log(enCours);
+// console.log(enRetard);
+// console.log(termine);
 
-console.log(days);
+// console.log(days);
 
 // localStorage chef de projet
 
@@ -113,9 +113,9 @@ function clear() {
     }
 }
 
+clear()
 
-
-console.log(events);
+// console.log(events);
 
 const projects = JSON.parse(localStorage.getItem("projects")) || [];
 
@@ -125,10 +125,7 @@ projects.forEach((project, index) => {
     const card = document.createElement("div");
     card.classList.add("event");
     // function projectDuration(){
-    //     switch(true){
-    //         case 
 
-    //     } 
         
     // }
 
@@ -146,7 +143,7 @@ projects.forEach((project, index) => {
   `;
     
 
-    let start = new Date(project.dateDebut);
+    let start = project.dateDebut;
     let end = new Date(project.dateFin);
 
 
@@ -157,10 +154,10 @@ projects.forEach((project, index) => {
     let thursday = document.querySelector('.thurs .events')
     let friday = document.querySelector('.fri .events')
 
-    console.log("ici", monday)
+    // console.log("ici", monday)
     let jour = end.getDay();
 
-    console.log(jour)
+    // console.log(jour)
 
     switch(true){
         case jour == 1:
@@ -179,11 +176,46 @@ projects.forEach((project, index) => {
             friday.appendChild(card);
         break;     
     }
-
     
-
+    console.log(project.dateDebut)
+    console.log(typeof project.dateDebut);
+    let [heure,minute]  = project.dateDebut.split(':');
+    console.log(heure)
     
+    switch(true){
+        case heure == "08": 
+            card.classList.add('start-8h');
+        break;
+        case heure == "09": 
+            card.classList.add('start-9h');
+        break;        
+        case heure == "10": 
+            card.classList.add('start-10h');
+        break;
+        case heure == '11': 
+            card.classList.add('start-11h');
+        break;
+        case heure == '12': 
+            card.classList.add('start-12h');
+        break;
+        case heure == '13': 
+            card.classList.add('start-13h');
+        break;
+        case heure == '14': 
+            card.classList.add('start-14h');
+        break;
+        case heure == '15': 
+            card.classList.add('start-15h');
+        break;
+        case heure == '16': 
+            card.classList.add('start-16h');
+        break;
+    }    
+
+
 });
 
 console.log(projects);
+
+
 

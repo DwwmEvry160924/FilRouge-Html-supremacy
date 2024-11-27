@@ -36,6 +36,11 @@ formNewProjet.addEventListener('submit', function(e) {
   let deadlineData = new Date(dateProject);
   let currentDate = new Date();
 
+  console.log(dataProjects.dateDebut);
+  let [heure,minute]  = heureDebut.split(':');
+
+  console.log(heure);
+
 
   console.log(deadlineData.getHours());
   console.log(deadlineData.getDay());
@@ -55,7 +60,7 @@ formNewProjet.addEventListener('submit', function(e) {
   localStorage.setItem('projects', JSON.stringify(projects));
   console.log('Projects saved:', projects);
 
-  // window.location.href = '../../pages_pro/chef_projet/index_chef_projet.html';
+  window.location.href = '../../pages_pro/chef_projet/index_chef_projet.html';
 
   console.log(typeof dateProject);
 
