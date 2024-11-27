@@ -4,8 +4,6 @@
   font-family: "Roboto Mono", monospace;
 }
 
-
-
 header {
   height: 80px;
   width: 100%;
@@ -29,22 +27,22 @@ nav {
 }
 
 .navbar-gauche {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
-
 .navbar-droite {
-  display: flex;
-  gap: 30px;
-  margin-right: 25px;
-
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 5px;
 }
 
 .navbar {
   display: flex;
   gap: 20px;
 }
+
 
 html {
   background-color: #F7FFF7;
@@ -59,6 +57,65 @@ footer {
   align-items: center;
   
 }
+
+/*
+Notification
+*/
+#Notification-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#Notification{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgb(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    
+}
+.hidden{
+    visibility: hidden;
+}
+
+.show {
+    visibility: unset;
+}
+.head-notif{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 300px;
+    h1{
+        margin: 5px;
+    }
+
+}
+.body-notif{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    gap: 10px;
+
+    .notif{
+        height: fit-content;
+        padding: 15px;
+        border: grey 1px solid;
+        border-radius: 5px;
+    }
+
+}
+/*
+Notification end
+*/
+
 
 
 
@@ -282,14 +339,7 @@ p {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar-gauche,
-  .navbar-droite {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 10px;
-  }
+
 
  
 
@@ -316,27 +366,9 @@ header {
   background: linear-gradient(0.25turn, rgb(78, 205, 196), rgb(41, 47, 54));
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-nav a {
-  text-decoration: none;
-  font-weight: bold;
-  color: rgb(0, 0, 0);
-}
 
-.navbar-gauche, .navbar-droite {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
 
-.navbar-droite {
-  margin-right: 25px;
-}
 
 html {
   background-color: #F7FFF7;
@@ -395,7 +427,7 @@ html {
   align-items: center;
 }
 
-    }
+    
     .dot{
       width: 10px;
       height: 10px;
